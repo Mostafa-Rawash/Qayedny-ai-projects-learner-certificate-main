@@ -1,0 +1,1230 @@
+2025-05-27 17:10:02,528 - INFO - Auto-selected port: 8002
+2025-05-27 17:10:02,528 - INFO - Initializing CertificateVerificationAPI
+2025-05-27 17:10:02,529 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-27 17:10:14,471 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-27 17:10:14,625 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-27 17:10:14,697 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-27 17:10:18,212 - INFO - Models initialized successfully
+2025-05-27 17:10:18,218 - INFO - Database initialized successfully
+2025-05-27 17:10:18,219 - INFO - Database initialized successfully
+2025-05-27 17:10:18,220 - INFO - Services created successfully
+2025-05-27 17:10:18,230 - INFO - CertificateVerificationAPI initialization complete
+2025-05-27 17:10:18,231 - INFO - Starting server on 0.0.0.0:8002
+2025-05-27 17:10:44,263 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data sciences'
+2025-05-27 17:10:44,267 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpxs9rwtp9.jpg
+2025-05-27 17:10:44,267 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data sciences'
+2025-05-27 17:10:47,491 - INFO - Extracted text length: 1018 characters
+2025-05-27 17:10:47,492 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-27 17:10:47,494 - INFO - Extracted text length: 1018 characters
+2025-05-27 17:10:47,495 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-27 17:10:47,754 - INFO - Document detected by structure analysis
+2025-05-27 17:10:47,755 - INFO - Document detected by structure analysis
+2025-05-27 17:10:47,756 - ERROR - Error during verification: 'ProofVerifier' object has no attribute '_verify_certificate'
+2025-05-27 17:10:47,756 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-27 17:10:47,757 - INFO - Verification data: status=error, category=courses, user=yossuf yasser mohamed
+2025-05-27 17:10:47,759 - ERROR - Error saving submission: table submissions has no column named verification_status
+2025-05-27 17:10:47,759 - ERROR - SQLite error saving verification result: table submissions has no column named verification_status
+2025-05-27 17:10:47,760 - ERROR - Database path: verification_data.db
+2025-05-27 17:10:47,760 - ERROR - Result data: {'verification_status': 'error', 'error': "'ProofVerifier' object has no attribute '_verify_certificate'", 'category': 'courses', 'user_name': 'yossuf yasser mohamed'}
+2025-05-27 17:10:47,761 - ERROR - Error processing verification request: table submissions has no column named verification_status
+2025-05-27 17:16:47,998 - INFO - Auto-selected port: 8002
+2025-05-27 17:16:47,999 - INFO - Initializing CertificateVerificationAPI
+2025-05-27 17:16:47,999 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-27 17:16:59,077 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-27 17:16:59,227 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-27 17:16:59,296 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-27 17:17:03,143 - INFO - Models initialized successfully
+2025-05-27 17:17:03,172 - INFO - Database initialized successfully
+2025-05-27 17:17:03,174 - INFO - Database initialized successfully
+2025-05-27 17:17:03,175 - INFO - Services created successfully
+2025-05-27 17:17:03,187 - INFO - CertificateVerificationAPI initialization complete
+2025-05-27 17:17:03,188 - INFO - Starting server on 0.0.0.0:8002
+2025-05-27 17:17:49,022 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data sciencess'
+2025-05-27 17:17:49,026 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp_1gh_tz6.jpg
+2025-05-27 17:17:49,026 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data sciencess'
+2025-05-27 17:17:52,480 - INFO - Extracted text length: 1018 characters
+2025-05-27 17:17:52,481 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-27 17:17:52,484 - INFO - Extracted text length: 1018 characters
+2025-05-27 17:17:52,485 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-27 17:17:52,748 - INFO - Document detected by structure analysis
+2025-05-27 17:17:52,750 - INFO - Document detected by structure analysis
+2025-05-27 17:18:10,892 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-05-27 17:18:10,892 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-05-27 17:18:10,893 - INFO - Found exact name part in text: yossuf
+2025-05-27 17:18:10,893 - INFO - Found exact name part in text: yasser
+2025-05-27 17:18:10,894 - INFO - Name part not found in text (including variations): mohamed
+2025-05-27 17:18:10,894 - INFO - Found first name match
+2025-05-27 17:18:10,895 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-05-27 17:18:10,895 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-27 17:18:10,895 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-05-27 17:18:10,896 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-27 17:18:10,896 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-05-27 17:18:10,917 - INFO - Successfully saved verification result as submission with ID: 1
+2025-05-27 17:18:10,917 - INFO - Successfully saved verification result as submission with ID: 1
+2025-05-27 17:18:35,505 - INFO - Verification request - Category: sports, User: 'yossuf yasser mohamed', Activity: 'football'
+2025-05-27 17:18:35,507 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp98nrj4ma.jpg
+2025-05-27 17:18:35,508 - INFO - Starting verification for category: sports, user: 'yossuf yasser mohamed', activity: 'football'
+2025-05-27 17:18:36,452 - INFO - Extracted text length: 10 characters
+2025-05-27 17:18:36,452 - INFO - Full extracted text: N cent see
+2025-05-27 17:18:36,453 - INFO - Extracted text length: 10 characters
+2025-05-27 17:18:36,453 - INFO - Full extracted text: N cent see
+2025-05-27 17:18:37,986 - INFO - Extracted text length: 10 characters
+2025-05-27 17:18:37,987 - INFO - Full extracted text: N cent see
+2025-05-27 17:18:38,173 - INFO - Activity photo detected by activity analysis
+2025-05-27 17:18:38,174 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-27 17:18:38,174 - INFO - Verification data: status=unverified, category=sports, user=yossuf yasser mohamed
+2025-05-27 17:18:38,175 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-27 17:18:38,175 - INFO - Verification data: status=unverified, category=sports, user=yossuf yasser mohamed
+2025-05-27 17:18:38,189 - INFO - Successfully saved verification result as submission with ID: 2
+2025-05-27 17:18:38,190 - INFO - Successfully saved verification result as submission with ID: 2
+2025-05-27 17:19:42,422 - INFO - Verification request - Category: sports, User: 'yossuf yasser mohamed', Activity: 'football'
+2025-05-27 17:19:42,423 - INFO - Using cached result for 6c2f1880e27cb7d1060785cd119e486fc1ca9f18fa58aea0d5a4f51133fe4817:sports:football:yossuf yasser mohamed
+2025-05-27 17:20:29,055 - INFO - Verification request - Category: sports, User: 'yossuf yasser mohamed', Activity: 'football'
+2025-05-27 17:20:29,055 - INFO - Using cached result for 6c2f1880e27cb7d1060785cd119e486fc1ca9f18fa58aea0d5a4f51133fe4817:sports:football:yossuf yasser mohamed
+2025-05-27 17:20:31,667 - INFO - Received batch submission request for 1 activities
+2025-05-27 17:20:31,670 - ERROR - Error updating verification status: no such table: verifications
+2025-05-27 17:20:31,670 - ERROR - Error updating verification status: no such table: verifications
+2025-05-27 17:55:56,318 - INFO - Auto-selected port: 8002
+2025-05-27 17:55:56,319 - INFO - Initializing CertificateVerificationAPI
+2025-05-27 17:55:56,319 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-27 17:56:07,903 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-27 17:56:08,386 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-27 17:56:08,569 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-27 17:56:12,818 - INFO - Models initialized successfully
+2025-05-27 17:56:12,820 - INFO - Database initialized successfully
+2025-05-27 17:56:12,821 - INFO - Services created successfully
+2025-05-27 17:56:12,831 - INFO - CertificateVerificationAPI initialization complete
+2025-05-27 17:56:12,832 - INFO - Starting server on 0.0.0.0:8002
+2025-05-27 17:57:09,389 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-05-27 17:57:09,393 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp42gwc1ge.jpg
+2025-05-27 17:57:09,393 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-05-27 17:57:09,742 - INFO - Document detected by structure analysis
+2025-05-27 17:57:13,118 - INFO - Extracted text length: 1018 characters
+2025-05-27 17:57:13,118 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-27 17:57:30,049 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-05-27 17:57:30,050 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-05-27 17:57:30,051 - INFO - Found exact name part in text: yossuf
+2025-05-27 17:57:30,051 - INFO - Found exact name part in text: yasser
+2025-05-27 17:57:30,052 - INFO - Name part not found in text (including variations): mohamed
+2025-05-27 17:57:30,052 - INFO - Found first name match
+2025-05-27 17:57:30,053 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-05-27 17:57:30,053 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-27 17:57:30,054 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-05-27 17:57:30,072 - INFO - Successfully saved verification result as submission with ID: 3
+2025-05-27 17:57:30,073 - INFO - Explicitly saved verification result with ID: 3
+2025-05-27 17:57:59,951 - INFO - Verification request - Category: sports, User: 'yossuf yasser mohamed', Activity: 'playing football'
+2025-05-27 17:57:59,953 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpfx8ghb8e.jpg
+2025-05-27 17:57:59,953 - INFO - Starting verification for category: sports, user: 'yossuf yasser mohamed', activity: 'playing football'
+2025-05-27 17:58:01,296 - INFO - Extracted text length: 10 characters
+2025-05-27 17:58:01,296 - INFO - Full extracted text: N cent see
+2025-05-27 17:58:01,474 - INFO - Activity photo detected by activity analysis
+2025-05-27 17:58:04,636 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-27 17:58:04,637 - INFO - Verification data: status=verified, category=sports, user=yossuf yasser mohamed
+2025-05-27 17:58:04,649 - INFO - Successfully saved verification result as submission with ID: 4
+2025-05-27 17:58:04,649 - INFO - Explicitly saved verification result with ID: 4
+2025-05-27 17:58:12,980 - INFO - Received batch submission request for 2 activities
+2025-05-27 17:58:12,984 - ERROR - Error updating verification status: no such table: verifications
+2025-05-27 17:58:12,984 - ERROR - Error updating verification status: no such table: verifications
+2025-05-27 17:58:12,986 - ERROR - Error updating verification status: no such table: verifications
+2025-05-27 17:58:12,986 - ERROR - Error updating verification status: no such table: verifications
+2025-05-27 18:09:18,119 - INFO - Verification request - Category: workshops, User: 'yossuf yasser mohamed', Activity: 'building skeletons  '
+2025-05-27 18:09:18,127 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpcttpkwkx.png
+2025-05-27 18:09:18,128 - INFO - Starting verification for category: workshops, user: 'yossuf yasser mohamed', activity: 'building skeletons  '
+2025-05-27 18:09:18,657 - INFO - Activity photo detected by content analysis
+2025-05-27 18:09:22,226 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-27 18:09:22,226 - INFO - Verification data: status=verified, category=workshops, user=yossuf yasser mohamed
+2025-05-27 18:09:22,241 - INFO - Successfully saved verification result as submission with ID: 5
+2025-05-27 18:09:22,242 - INFO - Explicitly saved verification result with ID: 5
+2025-05-27 18:09:25,528 - INFO - Received batch submission request for 1 activities
+2025-05-27 18:09:25,530 - ERROR - Error updating verification status: no such table: verifications
+2025-05-27 18:09:25,531 - ERROR - Error updating verification status: no such table: verifications
+2025-05-28 00:42:39,775 - INFO - Auto-selected port: 8002
+2025-05-28 00:42:39,776 - INFO - Initializing CertificateVerificationAPI
+2025-05-28 00:42:39,777 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-28 00:42:56,700 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-28 00:42:56,858 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-28 00:42:57,037 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-28 00:43:02,351 - INFO - Models initialized successfully
+2025-05-28 00:43:02,364 - INFO - Database initialized successfully
+2025-05-28 00:43:02,365 - INFO - Services created successfully
+2025-05-28 00:43:02,380 - INFO - CertificateVerificationAPI initialization complete
+2025-05-28 00:43:02,380 - INFO - Starting server on 0.0.0.0:8002
+2025-05-28 00:45:56,118 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data scienc'
+2025-05-28 00:45:56,122 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp9me51av5.jpg
+2025-05-28 00:45:56,123 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data scienc'
+2025-05-28 00:45:56,534 - INFO - Document detected by structure analysis
+2025-05-28 00:45:59,817 - INFO - Extracted text length: 1018 characters
+2025-05-28 00:45:59,818 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-28 00:46:17,378 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-05-28 00:46:17,378 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-05-28 00:46:17,379 - INFO - Found exact name part in text: yossuf
+2025-05-28 00:46:17,379 - INFO - Found exact name part in text: yasser
+2025-05-28 00:46:17,380 - INFO - Name part not found in text (including variations): mohamed
+2025-05-28 00:46:17,380 - INFO - Found first name match
+2025-05-28 00:46:17,380 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-05-28 00:46:17,381 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 00:46:17,381 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-05-28 00:46:17,398 - INFO - Successfully saved verification result as submission with ID: 6
+2025-05-28 00:46:57,901 - INFO - Verification request - Category: sports, User: 'yossuf yasser mohamed', Activity: 'football'
+2025-05-28 00:46:57,903 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpycnn5nqi.jpg
+2025-05-28 00:46:57,903 - INFO - Starting verification for category: sports, user: 'yossuf yasser mohamed', activity: 'football'
+2025-05-28 00:46:59,373 - INFO - Extracted text length: 10 characters
+2025-05-28 00:46:59,374 - INFO - Full extracted text: N cent see
+2025-05-28 00:46:59,567 - INFO - Activity photo detected by activity analysis
+2025-05-28 00:47:03,002 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 00:47:03,002 - INFO - Verification data: status=verified, category=sports, user=yossuf yasser mohamed
+2025-05-28 00:47:03,015 - INFO - Successfully saved verification result as submission with ID: 7
+2025-05-28 00:47:20,052 - INFO - Received batch submission request for 2 activities
+2025-05-28 00:47:20,055 - ERROR - Error updating verification status: no such table: verifications
+2025-05-28 00:47:20,056 - ERROR - Error updating verification status: no such table: verifications
+2025-05-28 00:47:20,057 - ERROR - Error updating verification status: no such table: verifications
+2025-05-28 00:47:20,058 - ERROR - Error updating verification status: no such table: verifications
+2025-05-28 00:48:52,811 - INFO - Verification request - Category: courses, User: 'yossuf yasser', Activity: 'data science'
+2025-05-28 00:48:52,814 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpl_r4pjwt.jpg
+2025-05-28 00:48:52,814 - INFO - Starting verification for category: courses, user: 'yossuf yasser', activity: 'data science'
+2025-05-28 00:48:53,072 - INFO - Document detected by structure analysis
+2025-05-28 00:48:56,251 - INFO - Extracted text length: 1018 characters
+2025-05-28 00:48:56,251 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-28 00:49:12,522 - INFO - Checking name in text. Name to check: 'yossuf yasser'
+2025-05-28 00:49:12,523 - INFO - Name parts to check: ['yossuf', 'yasser']
+2025-05-28 00:49:12,524 - INFO - Found exact name part in text: yossuf
+2025-05-28 00:49:12,524 - INFO - Found exact name part in text: yasser
+2025-05-28 00:49:12,524 - INFO - Found full name match!
+2025-05-28 00:49:12,525 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 1.0, 'first_name_found': True}
+2025-05-28 00:49:12,525 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 00:49:12,526 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser
+2025-05-28 00:49:12,579 - INFO - Successfully saved verification result as submission with ID: 8
+2025-05-28 00:50:35,744 - INFO - Verification request - Category: courses, User: 'yossuf yasser', Activity: 'data science'
+2025-05-28 00:50:35,745 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yasser
+2025-05-28 00:51:03,421 - INFO - Verification request - Category: sports, User: 'yossuf yasser', Activity: 'football'
+2025-05-28 00:51:03,423 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp8yo_5dco.jpg
+2025-05-28 00:51:03,424 - INFO - Starting verification for category: sports, user: 'yossuf yasser', activity: 'football'
+2025-05-28 00:51:04,861 - INFO - Extracted text length: 10 characters
+2025-05-28 00:51:04,861 - INFO - Full extracted text: N cent see
+2025-05-28 00:51:05,050 - INFO - Activity photo detected by activity analysis
+2025-05-28 00:51:08,934 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 00:51:08,934 - INFO - Verification data: status=verified, category=sports, user=yossuf yasser
+2025-05-28 00:51:08,949 - INFO - Successfully saved verification result as submission with ID: 9
+2025-05-28 00:51:23,712 - INFO - Received batch submission request for 2 activities
+2025-05-28 00:51:23,715 - ERROR - Error updating verification status: no such table: verifications
+2025-05-28 00:51:23,716 - ERROR - Error updating verification status: no such table: verifications
+2025-05-28 00:51:23,717 - ERROR - Error updating verification status: no such table: verifications
+2025-05-28 00:51:23,718 - ERROR - Error updating verification status: no such table: verifications
+2025-05-28 01:01:31,955 - INFO - Auto-selected port: 8002
+2025-05-28 01:01:31,955 - INFO - Initializing CertificateVerificationAPI
+2025-05-28 01:01:31,956 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-28 01:01:43,292 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-28 01:01:43,749 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-28 01:01:43,813 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-28 01:01:47,228 - INFO - Models initialized successfully
+2025-05-28 01:01:47,230 - INFO - Database initialized successfully
+2025-05-28 01:01:47,230 - INFO - Services created successfully
+2025-05-28 01:01:47,242 - INFO - CertificateVerificationAPI initialization complete
+2025-05-28 01:01:47,243 - INFO - Starting server on 0.0.0.0:8002
+2025-05-28 01:02:39,275 - INFO - Verification request - Category: courses, User: 'yossuf yasser', Activity: 'data science'
+2025-05-28 01:02:39,279 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpwwfdidqs.jpg
+2025-05-28 01:02:39,279 - INFO - Starting verification for category: courses, user: 'yossuf yasser', activity: 'data science'
+2025-05-28 01:02:39,569 - INFO - Document detected by structure analysis
+2025-05-28 01:02:42,620 - INFO - Extracted text length: 1018 characters
+2025-05-28 01:02:42,621 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-28 01:02:58,088 - INFO - Checking name in text. Name to check: 'yossuf yasser'
+2025-05-28 01:02:58,088 - INFO - Name parts to check: ['yossuf', 'yasser']
+2025-05-28 01:02:58,089 - INFO - Found exact name part in text: yossuf
+2025-05-28 01:02:58,089 - INFO - Found exact name part in text: yasser
+2025-05-28 01:02:58,090 - INFO - Found full name match!
+2025-05-28 01:02:58,090 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 1.0, 'first_name_found': True}
+2025-05-28 01:02:58,090 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:02:58,091 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser
+2025-05-28 01:02:58,139 - INFO - Successfully saved verification result as submission with ID: 10
+2025-05-28 01:02:58,153 - INFO - Verification request - Category: courses, User: 'yossuf yasser', Activity: 'data science'
+2025-05-28 01:02:58,155 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yasser
+2025-05-28 01:04:35,790 - INFO - Received batch submission request for 2 activities
+2025-05-28 01:04:35,792 - ERROR - Error processing batch submission: 'VerificationService' object has no attribute 'update_verification'
+2025-05-28 01:07:48,775 - INFO - Auto-selected port: 8002
+2025-05-28 01:07:48,776 - INFO - Initializing CertificateVerificationAPI
+2025-05-28 01:07:48,777 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-28 01:08:01,494 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-28 01:08:01,917 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-28 01:08:01,992 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-28 01:08:05,554 - INFO - Models initialized successfully
+2025-05-28 01:08:05,557 - INFO - Database initialized successfully
+2025-05-28 01:08:05,557 - INFO - Services created successfully
+2025-05-28 01:08:05,570 - INFO - CertificateVerificationAPI initialization complete
+2025-05-28 01:08:05,571 - INFO - Starting server on 0.0.0.0:8002
+2025-05-28 01:10:47,492 - INFO - Received batch submission request for 2 activities
+2025-05-28 01:10:47,496 - ERROR - Error updating verification status: no such table: verifications
+2025-05-28 01:10:47,496 - ERROR - Error updating verification status: no such table: verifications
+2025-05-28 01:10:47,498 - ERROR - Error updating submission time information: no such column: time_unit
+2025-05-28 01:10:47,498 - ERROR - Error processing batch submission: no such column: time_unit
+2025-05-28 01:13:08,098 - INFO - Auto-selected port: 8002
+2025-05-28 01:13:08,099 - INFO - Initializing CertificateVerificationAPI
+2025-05-28 01:13:08,100 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-28 01:13:20,114 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-28 01:13:20,298 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-28 01:13:20,364 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-28 01:13:24,824 - INFO - Models initialized successfully
+2025-05-28 01:13:24,826 - INFO - Database initialized successfully
+2025-05-28 01:13:24,874 - INFO - Database initialized successfully
+2025-05-28 01:13:24,875 - INFO - Database schema updated successfully
+2025-05-28 01:13:24,876 - INFO - CertificateVerificationAPI initialization complete
+2025-05-28 01:13:24,888 - INFO - Starting server on 0.0.0.0:8002
+2025-05-28 01:13:57,714 - INFO - Received batch submission request for 2 activities
+2025-05-28 01:14:23,462 - INFO - Verification request - Category: courses, User: 'yossuf yasser', Activity: 'data science'
+2025-05-28 01:14:23,464 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpclmuiqgi.jpg
+2025-05-28 01:14:23,465 - INFO - Starting verification for category: courses, user: 'yossuf yasser', activity: 'data science'
+2025-05-28 01:14:23,775 - INFO - Document detected by structure analysis
+2025-05-28 01:14:26,948 - INFO - Extracted text length: 1018 characters
+2025-05-28 01:14:26,949 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-28 01:14:44,043 - INFO - Checking name in text. Name to check: 'yossuf yasser'
+2025-05-28 01:14:44,043 - INFO - Name parts to check: ['yossuf', 'yasser']
+2025-05-28 01:14:44,044 - INFO - Found exact name part in text: yossuf
+2025-05-28 01:14:44,044 - INFO - Found exact name part in text: yasser
+2025-05-28 01:14:44,045 - INFO - Found full name match!
+2025-05-28 01:14:44,045 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 1.0, 'first_name_found': True}
+2025-05-28 01:14:44,046 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:14:44,046 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser
+2025-05-28 01:14:44,099 - INFO - Successfully saved verification result as submission with ID: 1
+2025-05-28 01:15:16,027 - INFO - Received batch submission request for 1 activities
+2025-05-28 01:15:16,029 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:15:16,030 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:16:27,074 - INFO - Verification request - Category: sports, User: 'yossuf yasser', Activity: 'football'
+2025-05-28 01:16:27,076 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpniyxegvn.jpg
+2025-05-28 01:16:27,077 - INFO - Starting verification for category: sports, user: 'yossuf yasser', activity: 'football'
+2025-05-28 01:16:28,518 - INFO - Extracted text length: 10 characters
+2025-05-28 01:16:28,518 - INFO - Full extracted text: N cent see
+2025-05-28 01:16:28,725 - INFO - Activity photo detected by activity analysis
+2025-05-28 01:16:32,157 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:16:32,157 - INFO - Verification data: status=verified, category=sports, user=yossuf yasser
+2025-05-28 01:16:32,170 - INFO - Successfully saved verification result as submission with ID: 2
+2025-05-28 01:16:38,309 - INFO - Received batch submission request for 1 activities
+2025-05-28 01:16:38,312 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:16:38,313 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:20:53,344 - INFO - Auto-selected port: 8002
+2025-05-28 01:20:53,344 - INFO - Initializing CertificateVerificationAPI
+2025-05-28 01:20:53,345 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-28 01:21:04,540 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-28 01:21:04,731 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-28 01:21:04,798 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-28 01:21:08,359 - INFO - Models initialized successfully
+2025-05-28 01:21:08,371 - ERROR - Database initialization error: near "OR": syntax error
+2025-05-28 01:22:43,843 - INFO - Auto-selected port: 8002
+2025-05-28 01:22:43,843 - INFO - Initializing CertificateVerificationAPI
+2025-05-28 01:22:43,844 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-28 01:22:54,958 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-28 01:22:55,113 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-28 01:22:55,183 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-28 01:22:58,615 - INFO - Models initialized successfully
+2025-05-28 01:22:58,631 - INFO - Database initialized successfully
+2025-05-28 01:22:58,633 - INFO - Removed existing database
+2025-05-28 01:22:58,659 - INFO - Database initialized successfully
+2025-05-28 01:22:58,660 - INFO - Database schema updated successfully with new triggers
+2025-05-28 01:22:58,660 - INFO - CertificateVerificationAPI initialization complete
+2025-05-28 01:22:58,674 - INFO - Starting server on 0.0.0.0:8002
+2025-05-28 01:23:42,384 - INFO - Verification request - Category: courses, User: 'yossuf yasser', Activity: 'data science'
+2025-05-28 01:23:42,388 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp0dc49c8g.jpg
+2025-05-28 01:23:42,388 - INFO - Starting verification for category: courses, user: 'yossuf yasser', activity: 'data science'
+2025-05-28 01:23:42,660 - INFO - Document detected by structure analysis
+2025-05-28 01:23:45,819 - INFO - Extracted text length: 1018 characters
+2025-05-28 01:23:45,820 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-28 01:24:02,089 - INFO - Checking name in text. Name to check: 'yossuf yasser'
+2025-05-28 01:24:02,089 - INFO - Name parts to check: ['yossuf', 'yasser']
+2025-05-28 01:24:02,090 - INFO - Found exact name part in text: yossuf
+2025-05-28 01:24:02,090 - INFO - Found exact name part in text: yasser
+2025-05-28 01:24:02,091 - INFO - Found full name match!
+2025-05-28 01:24:02,091 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 1.0, 'first_name_found': True}
+2025-05-28 01:24:02,092 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:24:02,092 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser
+2025-05-28 01:24:02,157 - INFO - Successfully saved verification result as submission with ID: 1
+2025-05-28 01:24:10,991 - INFO - Received batch submission request for 1 activities
+2025-05-28 01:24:10,994 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:24:10,995 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:26:19,990 - INFO - Auto-selected port: 8002
+2025-05-28 01:26:19,991 - INFO - Initializing CertificateVerificationAPI
+2025-05-28 01:26:19,992 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-28 01:26:30,822 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-28 01:26:30,981 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-28 01:26:31,044 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-28 01:26:34,455 - INFO - Models initialized successfully
+2025-05-28 01:26:34,482 - INFO - Database initialized successfully
+2025-05-28 01:26:34,483 - INFO - Removed existing database
+2025-05-28 01:26:34,506 - INFO - Database initialized successfully
+2025-05-28 01:26:34,506 - INFO - Database schema updated successfully with new triggers
+2025-05-28 01:26:34,507 - INFO - CertificateVerificationAPI initialization complete
+2025-05-28 01:26:34,519 - INFO - Starting server on 0.0.0.0:8002
+2025-05-28 01:27:14,458 - INFO - Verification request - Category: courses, User: 'yossuf yasser', Activity: 'data science'
+2025-05-28 01:27:14,462 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpg2nkxtet.jpg
+2025-05-28 01:27:14,462 - INFO - Starting verification for category: courses, user: 'yossuf yasser', activity: 'data science'
+2025-05-28 01:27:14,728 - INFO - Document detected by structure analysis
+2025-05-28 01:27:17,842 - INFO - Extracted text length: 1018 characters
+2025-05-28 01:27:17,842 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-28 01:27:33,678 - INFO - Checking name in text. Name to check: 'yossuf yasser'
+2025-05-28 01:27:33,679 - INFO - Name parts to check: ['yossuf', 'yasser']
+2025-05-28 01:27:33,679 - INFO - Found exact name part in text: yossuf
+2025-05-28 01:27:33,679 - INFO - Found exact name part in text: yasser
+2025-05-28 01:27:33,680 - INFO - Found full name match!
+2025-05-28 01:27:33,680 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 1.0, 'first_name_found': True}
+2025-05-28 01:27:33,681 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:27:33,681 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser
+2025-05-28 01:27:33,734 - INFO - Successfully saved verification result as submission with ID: 1
+2025-05-28 01:27:44,766 - INFO - Received batch submission request for 1 activities
+2025-05-28 01:27:44,769 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:27:44,769 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:28:55,905 - INFO - Verification request - Category: courses, User: 'yossuf yasser', Activity: 'data science'
+2025-05-28 01:28:55,907 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yasser
+2025-05-28 01:28:58,722 - INFO - Received batch submission request for 1 activities
+2025-05-28 01:28:58,724 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:28:58,725 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:33:07,601 - INFO - Auto-selected port: 8002
+2025-05-28 01:33:07,602 - INFO - Initializing CertificateVerificationAPI
+2025-05-28 01:33:07,602 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-28 01:33:19,090 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-28 01:33:19,249 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-28 01:33:19,318 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-28 01:33:22,863 - INFO - Models initialized successfully
+2025-05-28 01:33:22,926 - INFO - Database initialized successfully
+2025-05-28 01:33:22,927 - INFO - Removed existing database
+2025-05-28 01:33:22,952 - INFO - Database initialized successfully
+2025-05-28 01:33:22,953 - INFO - Database schema updated successfully with new triggers
+2025-05-28 01:33:22,954 - INFO - CertificateVerificationAPI initialization complete
+2025-05-28 01:33:22,968 - INFO - Starting server on 0.0.0.0:8002
+2025-05-28 01:33:56,098 - INFO - Verification request - Category: sports, User: 'yossuf yasser', Activity: 'football'
+2025-05-28 01:33:56,101 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp1rdtpgtu.jpg
+2025-05-28 01:33:56,101 - INFO - Starting verification for category: sports, user: 'yossuf yasser', activity: 'football'
+2025-05-28 01:33:56,356 - INFO - Document detected by structure analysis
+2025-05-28 01:33:59,453 - INFO - Extracted text length: 1018 characters
+2025-05-28 01:33:59,454 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-28 01:34:16,045 - INFO - Checking name in text. Name to check: 'yossuf yasser'
+2025-05-28 01:34:16,045 - INFO - Name parts to check: ['yossuf', 'yasser']
+2025-05-28 01:34:16,046 - INFO - Found exact name part in text: yossuf
+2025-05-28 01:34:16,046 - INFO - Found exact name part in text: yasser
+2025-05-28 01:34:16,047 - INFO - Found full name match!
+2025-05-28 01:34:16,047 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 1.0, 'first_name_found': True}
+2025-05-28 01:34:16,047 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:34:16,048 - INFO - Verification data: status=unverified, category=sports, user=yossuf yasser
+2025-05-28 01:34:16,066 - INFO - Successfully saved verification result as submission with ID: 1
+2025-05-28 01:34:38,701 - INFO - Verification request - Category: sports, User: 'yossuf yasser', Activity: 'football'
+2025-05-28 01:34:38,703 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp04km_409.jpg
+2025-05-28 01:34:38,704 - INFO - Starting verification for category: sports, user: 'yossuf yasser', activity: 'football'
+2025-05-28 01:34:40,211 - INFO - Extracted text length: 10 characters
+2025-05-28 01:34:40,212 - INFO - Full extracted text: N cent see
+2025-05-28 01:34:40,404 - INFO - Activity photo detected by activity analysis
+2025-05-28 01:34:43,561 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:34:43,562 - INFO - Verification data: status=verified, category=sports, user=yossuf yasser
+2025-05-28 01:34:43,575 - INFO - Successfully saved verification result as submission with ID: 2
+2025-05-28 01:34:46,734 - INFO - Received batch submission request for 1 activities
+2025-05-28 01:34:46,743 - ERROR - Error updating user total hours: no such column: updated_at
+2025-05-28 01:34:46,745 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:34:46,745 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:35:49,130 - INFO - Verification request - Category: workshops, User: 'yossuf yasser', Activity: 'building skeletons'
+2025-05-28 01:35:49,137 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpgat2he65.png
+2025-05-28 01:35:49,138 - INFO - Starting verification for category: workshops, user: 'yossuf yasser', activity: 'building skeletons'
+2025-05-28 01:35:49,584 - INFO - Activity photo detected by content analysis
+2025-05-28 01:35:53,270 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:35:53,271 - INFO - Verification data: status=verified, category=workshops, user=yossuf yasser
+2025-05-28 01:35:53,283 - INFO - Successfully saved verification result as submission with ID: 3
+2025-05-28 01:36:09,842 - INFO - Received batch submission request for 1 activities
+2025-05-28 01:36:09,851 - ERROR - Error updating user total hours: no such column: updated_at
+2025-05-28 01:36:09,853 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:36:09,853 - ERROR - Error updating verification status: no such column: updated_at
+2025-05-28 01:40:31,457 - INFO - Auto-selected port: 8002
+2025-05-28 01:40:31,457 - INFO - Initializing CertificateVerificationAPI
+2025-05-28 01:40:31,458 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-28 01:40:42,654 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-28 01:40:42,809 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-28 01:40:42,883 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-28 01:40:46,436 - INFO - Models initialized successfully
+2025-05-28 01:40:46,462 - INFO - Database initialized successfully
+2025-05-28 01:40:46,463 - INFO - Removed existing database
+2025-05-28 01:40:46,488 - INFO - Database initialized successfully
+2025-05-28 01:40:46,489 - INFO - Database schema updated successfully with new triggers
+2025-05-28 01:40:46,489 - INFO - CertificateVerificationAPI initialization complete
+2025-05-28 01:40:46,501 - INFO - Starting server on 0.0.0.0:8002
+2025-05-28 01:41:29,132 - INFO - Verification request - Category: workshops, User: 'essam', Activity: 'building skeletons'
+2025-05-28 01:41:29,142 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp8oxnxf_y.png
+2025-05-28 01:41:29,143 - INFO - Starting verification for category: workshops, user: 'essam', activity: 'building skeletons'
+2025-05-28 01:41:29,730 - INFO - Activity photo detected by content analysis
+2025-05-28 01:41:33,778 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:41:33,779 - INFO - Verification data: status=verified, category=workshops, user=essam
+2025-05-28 01:41:33,798 - INFO - Successfully saved verification result as submission with ID: 1
+2025-05-28 01:42:03,987 - INFO - Received batch submission request for 1 activities
+2025-05-28 01:43:13,626 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-05-28 01:43:13,629 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpkfmfpf4v.jpg
+2025-05-28 01:43:13,630 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-05-28 01:43:13,864 - INFO - Document detected by structure analysis
+2025-05-28 01:43:16,806 - INFO - Extracted text length: 1018 characters
+2025-05-28 01:43:16,807 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-28 01:43:32,471 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-05-28 01:43:32,472 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-05-28 01:43:32,472 - INFO - Found exact name part in text: yossuf
+2025-05-28 01:43:32,472 - INFO - Found exact name part in text: yasser
+2025-05-28 01:43:32,473 - INFO - Name part not found in text (including variations): mohamed
+2025-05-28 01:43:32,473 - INFO - Found first name match
+2025-05-28 01:43:32,474 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-05-28 01:43:32,474 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:43:32,475 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-05-28 01:43:32,528 - INFO - Successfully saved verification result as submission with ID: 2
+2025-05-28 01:44:07,759 - INFO - Verification request - Category: sports, User: 'yossuf yasser mohamed', Activity: 'football'
+2025-05-28 01:44:07,762 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpui7l7s6e.jpg
+2025-05-28 01:44:07,762 - INFO - Starting verification for category: sports, user: 'yossuf yasser mohamed', activity: 'football'
+2025-05-28 01:44:09,062 - INFO - Extracted text length: 10 characters
+2025-05-28 01:44:09,063 - INFO - Full extracted text: N cent see
+2025-05-28 01:44:09,240 - INFO - Activity photo detected by activity analysis
+2025-05-28 01:44:12,411 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:44:12,411 - INFO - Verification data: status=verified, category=sports, user=yossuf yasser mohamed
+2025-05-28 01:44:12,423 - INFO - Successfully saved verification result as submission with ID: 3
+2025-05-28 01:44:22,486 - INFO - Received batch submission request for 2 activities
+2025-05-28 01:47:31,315 - INFO - Auto-selected port: 8002
+2025-05-28 01:47:31,316 - INFO - Initializing CertificateVerificationAPI
+2025-05-28 01:47:31,316 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-28 01:47:42,324 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-28 01:47:42,483 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-28 01:47:42,548 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-28 01:47:45,932 - INFO - Models initialized successfully
+2025-05-28 01:47:45,958 - INFO - Database initialized successfully
+2025-05-28 01:47:45,959 - INFO - Removed existing database
+2025-05-28 01:47:45,984 - INFO - Database initialized successfully
+2025-05-28 01:47:45,984 - INFO - Database schema updated successfully with new triggers
+2025-05-28 01:47:45,985 - INFO - CertificateVerificationAPI initialization complete
+2025-05-28 01:47:45,999 - INFO - Starting server on 0.0.0.0:8002
+2025-05-28 01:50:22,232 - INFO - Verification request - Category: workshops, User: 'yossuf yasser mohamed', Activity: 'building skeletons'
+2025-05-28 01:50:22,240 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpwk9wc6t4.png
+2025-05-28 01:50:22,241 - INFO - Starting verification for category: workshops, user: 'yossuf yasser mohamed', activity: 'building skeletons'
+2025-05-28 01:50:22,743 - INFO - Activity photo detected by content analysis
+2025-05-28 01:50:26,459 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:50:26,460 - INFO - Verification data: status=verified, category=workshops, user=yossuf yasser mohamed
+2025-05-28 01:50:26,479 - INFO - Successfully saved verification result as submission with ID: 1
+2025-05-28 01:51:32,556 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-05-28 01:51:32,559 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp0q37eqse.jpg
+2025-05-28 01:51:32,559 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-05-28 01:51:32,782 - INFO - Document detected by structure analysis
+2025-05-28 01:51:35,798 - INFO - Extracted text length: 1018 characters
+2025-05-28 01:51:35,799 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-28 01:51:51,017 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-05-28 01:51:51,017 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-05-28 01:51:51,018 - INFO - Found exact name part in text: yossuf
+2025-05-28 01:51:51,018 - INFO - Found exact name part in text: yasser
+2025-05-28 01:51:51,018 - INFO - Name part not found in text (including variations): mohamed
+2025-05-28 01:51:51,019 - INFO - Found first name match
+2025-05-28 01:51:51,019 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-05-28 01:51:51,020 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:51:51,020 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-05-28 01:51:51,068 - INFO - Successfully saved verification result as submission with ID: 2
+2025-05-28 01:51:54,484 - INFO - Received batch submission request for 2 activities
+2025-05-28 01:55:37,524 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-05-28 01:55:37,526 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yasser mohamed
+2025-05-28 01:56:01,623 - INFO - Verification request - Category: sports, User: 'yossuf yasser mohamed', Activity: 'football'
+2025-05-28 01:56:01,625 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmptof7d503.jpg
+2025-05-28 01:56:01,626 - INFO - Starting verification for category: sports, user: 'yossuf yasser mohamed', activity: 'football'
+2025-05-28 01:56:03,069 - INFO - Extracted text length: 10 characters
+2025-05-28 01:56:03,070 - INFO - Full extracted text: N cent see
+2025-05-28 01:56:03,263 - INFO - Activity photo detected by activity analysis
+2025-05-28 01:56:06,287 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:56:06,287 - INFO - Verification data: status=verified, category=sports, user=yossuf yasser mohamed
+2025-05-28 01:56:06,300 - INFO - Successfully saved verification result as submission with ID: 3
+2025-05-28 01:56:08,047 - INFO - Received batch submission request for 2 activities
+2025-05-28 01:56:08,049 - WARNING - Activity 2 not verified, skipping
+2025-05-28 01:58:44,642 - INFO - Verification request - Category: sports, User: 'mohamed', Activity: 'football'
+2025-05-28 01:58:44,644 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp5amjia2j.jpg
+2025-05-28 01:58:44,645 - INFO - Starting verification for category: sports, user: 'mohamed', activity: 'football'
+2025-05-28 01:58:46,015 - INFO - Extracted text length: 10 characters
+2025-05-28 01:58:46,016 - INFO - Full extracted text: N cent see
+2025-05-28 01:58:46,193 - INFO - Activity photo detected by activity analysis
+2025-05-28 01:58:49,724 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-28 01:58:49,725 - INFO - Verification data: status=verified, category=sports, user=mohamed
+2025-05-28 01:58:49,743 - INFO - Successfully saved verification result as submission with ID: 4
+2025-05-28 01:58:52,146 - INFO - Received batch submission request for 1 activities
+2025-05-29 15:25:39,220 - INFO - Auto-selected port: 8002
+2025-05-29 15:25:39,221 - INFO - Initializing CertificateVerificationAPI
+2025-05-29 15:25:39,221 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-29 15:25:53,997 - INFO - Loading pretrained weights from Hugging Face hub (timm/resnet50.a1_in1k)
+2025-05-29 15:25:54,321 - INFO - [timm/resnet50.a1_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2025-05-29 15:25:54,489 - INFO - Missing keys (fc.weight, fc.bias) discovered while loading pretrained weights. This is expected if model is being adapted.
+2025-05-29 15:25:59,754 - INFO - Models initialized successfully
+2025-05-29 15:25:59,785 - INFO - Database initialized successfully
+2025-05-29 15:25:59,786 - INFO - Services created successfully
+2025-05-29 15:25:59,799 - INFO - Starting server on 0.0.0.0:8002
+2025-05-29 15:26:55,399 - INFO - Verification request - Category: sports, User: 'yossuf yasser mohamed', Activity: 'football'
+2025-05-29 15:26:55,401 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpu3f1_cmx.jpg
+2025-05-29 15:26:55,402 - INFO - Starting verification for category: sports, user: 'yossuf yasser mohamed', activity: 'football'
+2025-05-29 15:26:55,783 - INFO - Document detected by structure analysis
+2025-05-29 15:26:58,965 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-29 15:26:58,965 - INFO - Verification data: status=verified, category=sports, user=yossuf yasser mohamed
+2025-05-29 15:26:58,976 - INFO - Successfully saved verification result as submission with ID: 5
+2025-05-29 15:27:14,973 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-05-29 15:27:14,976 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpy5y5yrxf.jpg
+2025-05-29 15:27:14,976 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-05-29 15:27:18,563 - INFO - Extracted text length: 1018 characters
+2025-05-29 15:27:18,564 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-29 15:27:18,567 - INFO - Document detected by text density
+2025-05-29 15:27:21,447 - INFO - Extracted text length: 1018 characters
+2025-05-29 15:27:21,448 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-29 15:27:36,726 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-05-29 15:27:36,726 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-05-29 15:27:36,727 - INFO - Found exact name part in text: yossuf
+2025-05-29 15:27:36,727 - INFO - Found exact name part in text: yasser
+2025-05-29 15:27:36,727 - INFO - Found first name match
+2025-05-29 15:27:36,728 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-05-29 15:27:36,728 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-29 15:27:36,728 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-05-29 15:27:36,741 - INFO - Successfully saved verification result as submission with ID: 6
+2025-05-29 15:28:11,442 - INFO - Verification request - Category: workshops, User: 'yossuf yasser mohamed', Activity: 'building skeletons'
+2025-05-29 15:28:11,449 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp5nd3c_ci.png
+2025-05-29 15:28:11,450 - INFO - Starting verification for category: workshops, user: 'yossuf yasser mohamed', activity: 'building skeletons'
+2025-05-29 15:28:11,704 - INFO - Document detected by structure analysis
+2025-05-29 15:28:15,223 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-29 15:28:15,223 - INFO - Verification data: status=verified, category=workshops, user=yossuf yasser mohamed
+2025-05-29 15:28:15,236 - INFO - Successfully saved verification result as submission with ID: 7
+2025-05-29 15:28:31,911 - INFO - Received batch submission request for 3 activities
+2025-05-29 15:29:52,877 - INFO - Verification request - Category: workshops, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-05-29 15:29:52,880 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpg0spv6dd.png
+2025-05-29 15:29:52,880 - INFO - Starting verification for category: workshops, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-05-29 15:29:55,882 - INFO - Extracted text length: 1178 characters
+2025-05-29 15:29:55,887 - INFO - Full extracted text: ae “Tt a) NG “se ae O88 : hala orem ipsum dolor sit amet; consectetur adipiscing elit: Donec dignissim ut ELE d Le i ‘dolorsit’ dipiscing elit: De ‘dignissi E Bele arcti vitae aliquetCras auctor. Mauris ut egestas volutpat; néque felis Ee 4 Zsa uta teats acs rub mairius pit SS 2 4 DATE 2th Geptonbor 2021 iw} sronarune Be Siphon Stange : F a ae PAS i —_—— ee Perens CERTIFICATE This cepffcal ts frcsented to ee Da ey, pel See Le Ove ‘wifech 77 i Lorem, ipumaols olor sit'amet, cone el cian it: Donec: Sn : arcti wigs. ge aliquet Cras at auctor fraurig Sut tegestas volutpat reque é felis Aenea sr ufhalat Vefienatis lactis nibh maximus hist SS “yer At —™ eo DATE auth Septenber 2021 iw} sionarune Be Stphen Stange &., eS eos Pe Nsaek NE ark BSG rah AED areeh DASE gh FR ral BE ae PST ef DRT a hE Na OTA ee hE ef Fi oP a _CERTIICATE ils “Be hel i “eZ XO whet itamet, cone iia it: Donec’ LGitssn ut Be arcti vias ge age Cras au auctor fraurig Sut tegestas volutpat reque é felis | Aseinpet ufhallat vafienatis lacks nibh maximus nist SS ; “fp” Xo ™~ DATE auth Septenber 2021 iw} sionarune Be Stphen Stange { 4 [Spr pese ea ear anges area peep eee re ear eer eer pee eater ee reed
+2025-05-29 15:29:55,888 - INFO - Document detected by text density
+2025-05-29 15:29:58,351 - INFO - Extracted text length: 1178 characters
+2025-05-29 15:29:58,352 - INFO - Full extracted text: ae “Tt a) NG “se ae O88 : hala orem ipsum dolor sit amet; consectetur adipiscing elit: Donec dignissim ut ELE d Le i ‘dolorsit’ dipiscing elit: De ‘dignissi E Bele arcti vitae aliquetCras auctor. Mauris ut egestas volutpat; néque felis Ee 4 Zsa uta teats acs rub mairius pit SS 2 4 DATE 2th Geptonbor 2021 iw} sronarune Be Siphon Stange : F a ae PAS i —_—— ee Perens CERTIFICATE This cepffcal ts frcsented to ee Da ey, pel See Le Ove ‘wifech 77 i Lorem, ipumaols olor sit'amet, cone el cian it: Donec: Sn : arcti wigs. ge aliquet Cras at auctor fraurig Sut tegestas volutpat reque é felis Aenea sr ufhalat Vefienatis lactis nibh maximus hist SS “yer At —™ eo DATE auth Septenber 2021 iw} sionarune Be Stphen Stange &., eS eos Pe Nsaek NE ark BSG rah AED areeh DASE gh FR ral BE ae PST ef DRT a hE Na OTA ee hE ef Fi oP a _CERTIICATE ils “Be hel i “eZ XO whet itamet, cone iia it: Donec’ LGitssn ut Be arcti vias ge age Cras au auctor fraurig Sut tegestas volutpat reque é felis | Aseinpet ufhallat vafienatis lacks nibh maximus nist SS ; “fp” Xo ™~ DATE auth Septenber 2021 iw} sionarune Be Stphen Stange { 4 [Spr pese ea ear anges area peep eee re ear eer eer pee eater ee reed
+2025-05-29 15:30:21,663 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-05-29 15:30:21,664 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-05-29 15:30:21,665 - INFO - Name check result: {'found': False, 'matched_parts': [], 'score': 0.0, 'first_name_found': False}
+2025-05-29 15:30:21,665 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-29 15:30:21,666 - INFO - Verification data: status=unverified, category=workshops, user=yossuf yasser mohamed
+2025-05-29 15:30:21,714 - INFO - Successfully saved verification result as submission with ID: 8
+2025-05-31 13:32:31,035 - INFO - Auto-selected port: 8002
+2025-05-31 13:32:31,035 - INFO - Initializing CertificateVerificationAPI
+2025-05-31 13:32:31,036 - INFO - Creating ProofVerifier instance and VerificationService
+2025-05-31 14:01:01,426 - INFO - Using CLIP large model for image-text matching
+2025-05-31 14:01:13,017 - INFO - Models initialized successfully
+2025-05-31 14:01:13,051 - INFO - Database initialized successfully
+2025-05-31 14:01:13,052 - INFO - Services created successfully
+2025-05-31 14:01:13,066 - INFO - Starting server on 0.0.0.0:8002
+2025-05-31 14:02:26,692 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-05-31 14:02:26,696 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpxz9c02yj.jpg
+2025-05-31 14:02:26,696 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-05-31 14:02:34,101 - INFO - Extracted text length: 1018 characters
+2025-05-31 14:02:34,102 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-31 14:02:34,105 - INFO - Document detected by text density
+2025-05-31 14:02:37,204 - INFO - Extracted text length: 1018 characters
+2025-05-31 14:02:37,205 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-05-31 14:02:54,217 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-05-31 14:02:54,217 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-05-31 14:02:54,218 - INFO - Found exact name part in text: yossuf
+2025-05-31 14:02:54,218 - INFO - Found exact name part in text: yasser
+2025-05-31 14:02:54,219 - INFO - Found first name match
+2025-05-31 14:02:54,219 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-05-31 14:02:54,220 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-31 14:02:54,220 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-05-31 14:02:54,234 - INFO - Successfully saved verification result as submission with ID: 9
+2025-05-31 14:03:28,298 - INFO - Verification request - Category: workshops, User: 'yossuf yasser mohamed', Activity: 'building skeletons'
+2025-05-31 14:03:28,305 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp0of7cmxg.png
+2025-05-31 14:03:28,306 - INFO - Starting verification for category: workshops, user: 'yossuf yasser mohamed', activity: 'building skeletons'
+2025-05-31 14:03:30,242 - INFO - Document detected by structure analysis
+2025-05-31 14:03:32,208 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-31 14:03:32,209 - INFO - Verification data: status=verified, category=workshops, user=yossuf yasser mohamed
+2025-05-31 14:03:32,223 - INFO - Successfully saved verification result as submission with ID: 10
+2025-05-31 14:25:43,174 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-05-31 14:25:43,175 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yasser mohamed
+2025-05-31 15:00:58,926 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-05-31 15:00:58,930 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yasser mohamed
+2025-05-31 15:01:21,638 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-05-31 15:01:21,648 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpow__q1b5.png
+2025-05-31 15:01:21,652 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-05-31 15:01:31,409 - INFO - Extracted text length: 1178 characters
+2025-05-31 15:01:31,411 - INFO - Full extracted text: ae “Tt a) NG “se ae O88 : hala orem ipsum dolor sit amet; consectetur adipiscing elit: Donec dignissim ut ELE d Le i ‘dolorsit’ dipiscing elit: De ‘dignissi E Bele arcti vitae aliquetCras auctor. Mauris ut egestas volutpat; néque felis Ee 4 Zsa uta teats acs rub mairius pit SS 2 4 DATE 2th Geptonbor 2021 iw} sronarune Be Siphon Stange : F a ae PAS i —_—— ee Perens CERTIFICATE This cepffcal ts frcsented to ee Da ey, pel See Le Ove ‘wifech 77 i Lorem, ipumaols olor sit'amet, cone el cian it: Donec: Sn : arcti wigs. ge aliquet Cras at auctor fraurig Sut tegestas volutpat reque é felis Aenea sr ufhalat Vefienatis lactis nibh maximus hist SS “yer At —™ eo DATE auth Septenber 2021 iw} sionarune Be Stphen Stange &., eS eos Pe Nsaek NE ark BSG rah AED areeh DASE gh FR ral BE ae PST ef DRT a hE Na OTA ee hE ef Fi oP a _CERTIICATE ils “Be hel i “eZ XO whet itamet, cone iia it: Donec’ LGitssn ut Be arcti vias ge age Cras au auctor fraurig Sut tegestas volutpat reque é felis | Aseinpet ufhallat vafienatis lacks nibh maximus nist SS ; “fp” Xo ™~ DATE auth Septenber 2021 iw} sionarune Be Stphen Stange { 4 [Spr pese ea ear anges area peep eee re ear eer eer pee eater ee reed
+2025-05-31 15:01:31,411 - INFO - Document detected by text density
+2025-05-31 15:01:33,672 - INFO - Extracted text length: 1178 characters
+2025-05-31 15:01:33,674 - INFO - Full extracted text: ae “Tt a) NG “se ae O88 : hala orem ipsum dolor sit amet; consectetur adipiscing elit: Donec dignissim ut ELE d Le i ‘dolorsit’ dipiscing elit: De ‘dignissi E Bele arcti vitae aliquetCras auctor. Mauris ut egestas volutpat; néque felis Ee 4 Zsa uta teats acs rub mairius pit SS 2 4 DATE 2th Geptonbor 2021 iw} sronarune Be Siphon Stange : F a ae PAS i —_—— ee Perens CERTIFICATE This cepffcal ts frcsented to ee Da ey, pel See Le Ove ‘wifech 77 i Lorem, ipumaols olor sit'amet, cone el cian it: Donec: Sn : arcti wigs. ge aliquet Cras at auctor fraurig Sut tegestas volutpat reque é felis Aenea sr ufhalat Vefienatis lactis nibh maximus hist SS “yer At —™ eo DATE auth Septenber 2021 iw} sionarune Be Stphen Stange &., eS eos Pe Nsaek NE ark BSG rah AED areeh DASE gh FR ral BE ae PST ef DRT a hE Na OTA ee hE ef Fi oP a _CERTIICATE ils “Be hel i “eZ XO whet itamet, cone iia it: Donec’ LGitssn ut Be arcti vias ge age Cras au auctor fraurig Sut tegestas volutpat reque é felis | Aseinpet ufhallat vafienatis lacks nibh maximus nist SS ; “fp” Xo ™~ DATE auth Septenber 2021 iw} sionarune Be Stphen Stange { 4 [Spr pese ea ear anges area peep eee re ear eer eer pee eater ee reed
+2025-05-31 15:02:04,232 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-05-31 15:02:04,235 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-05-31 15:02:04,235 - INFO - Name check result: {'found': False, 'matched_parts': [], 'score': 0.0, 'first_name_found': False}
+2025-05-31 15:02:04,236 - INFO - Attempting to save verification result to database at verification_data.db
+2025-05-31 15:02:04,236 - INFO - Verification data: status=unverified, category=courses, user=yossuf yasser mohamed
+2025-05-31 15:02:04,249 - INFO - Successfully saved verification result as submission with ID: 11
+2025-05-31 15:04:41,159 - INFO - Verification request - Category: workshops, User: 'yossuf yasser mohamed', Activity: 'building skeletons'
+2025-05-31 15:04:41,164 - INFO - Using cached result for 5aec8f6c7ae489ebb27083a8008750a06836796b1b1f94f6be685e07ab1a95bf:workshops:building skeletons:yossuf yasser mohamed
+2025-06-03 16:43:32,942 - INFO - Auto-selected port: 8002
+2025-06-03 16:43:32,943 - INFO - Initializing CertificateVerificationAPI
+2025-06-03 16:43:32,943 - INFO - Creating ProofVerifier instance and VerificationService
+2025-06-03 16:43:46,243 - INFO - Models initialized successfully
+2025-06-03 16:43:46,288 - INFO - Database initialized successfully
+2025-06-03 16:43:46,288 - INFO - Services created successfully
+2025-06-03 16:43:46,301 - INFO - Starting server on 0.0.0.0:8002
+2025-06-03 16:44:14,309 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-06-03 16:44:14,312 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp80dzovvv.jpg
+2025-06-03 16:44:14,313 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-03 16:44:18,012 - INFO - Extracted text length: 1018 characters
+2025-06-03 16:44:18,013 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 16:44:18,015 - INFO - Document detected by text density
+2025-06-03 16:44:20,952 - INFO - Extracted text length: 1018 characters
+2025-06-03 16:44:20,953 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 16:44:38,293 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-03 16:44:38,294 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-03 16:44:38,294 - INFO - Found exact name part in text: yossuf
+2025-06-03 16:44:38,295 - INFO - Found exact name part in text: yasser
+2025-06-03 16:44:38,295 - INFO - Found first name match
+2025-06-03 16:44:38,296 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-03 16:44:38,296 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-03 16:44:38,297 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-03 16:44:38,300 - ERROR - Error saving submission: table submissions has no column named field
+2025-06-03 16:44:38,300 - ERROR - SQLite error saving verification result: table submissions has no column named field
+2025-06-03 16:44:38,301 - ERROR - Database path: verification_data.db
+2025-06-03 16:44:38,301 - ERROR - Result data: {'timestamp': '2025-06-03T16:44:14.313919', 'image_path': 'C:\\Users\\YOUSUF~1\\AppData\\Local\\Temp\\tmp80dzovvv.jpg', 'category': 'courses', 'activity_title': 'data science', 'user_name': 'yossuf yasser mohamed', 'verification_status': 'verified', 'confidence_score': 0.8949999999999999, 'details': {'proof_type': 'document', 'extracted_text': 'A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETIO', 'text_analysis': {'found_keywords': ['certificate', 'completion', 'learning', 'bootcamp'], 'keyword_count': 4, 'relevance_score': 1.0, 'classification': 'courses and data science related document', 'classification_score': 0.4513889253139496, 'is_relevant': True}, 'activity_name_check': {'found': True, 'matched_words': ['data', 'science'], 'score': 1.0}, 'name_check': {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}}, 'valid_for_time': True, 'time_validation': {'is_valid': True, 'confidence_percentage': 89.49999999999999, 'reason': 'All verification checks passed'}, 'recommendations': [], 'verification_report': {'proof_type': 'Document', 'text_analysis': {'keywords_found': 4, 'found_keywords': ['certificate', 'completion', 'learning', 'bootcamp'], 'relevance_score': 1.0}, 'activity_verification': {'activity_title': 'data science', 'found': True, 'match_score': 1.0, 'matched_words': ['data', 'science'], 'verified': True}, 'name_verification': {'name': 'yossuf yasser mohamed', 'found': True, 'match_score': 0.7, 'matched_parts': ['yossuf', 'yasser'], 'verified': True}, 'overall_status': {'status': 'verified', 'confidence_score': 0.8949999999999999, 'valid_for_time': True, 'confidence_percentage': 89.49999999999999}}, 'original_time': 33.0, 'calculated_time': 99.0, 'time_unit': 'hours', 'multiplier': 3}
+2025-06-03 16:44:38,302 - ERROR - Error processing verification request: table submissions has no column named field
+2025-06-03 16:44:38,316 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-06-03 16:44:38,320 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmphhzzus33.jpg
+2025-06-03 16:44:38,321 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-03 16:44:42,148 - INFO - Extracted text length: 1018 characters
+2025-06-03 16:44:42,148 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 16:44:42,151 - INFO - Document detected by text density
+2025-06-03 16:44:45,298 - INFO - Extracted text length: 1018 characters
+2025-06-03 16:44:45,299 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 16:45:01,549 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-03 16:45:01,549 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-03 16:45:01,550 - INFO - Found exact name part in text: yossuf
+2025-06-03 16:45:01,550 - INFO - Found exact name part in text: yasser
+2025-06-03 16:45:01,551 - INFO - Found first name match
+2025-06-03 16:45:01,551 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-03 16:45:01,551 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-03 16:45:01,552 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-03 16:45:01,555 - ERROR - Error saving submission: table submissions has no column named field
+2025-06-03 16:45:01,556 - ERROR - SQLite error saving verification result: table submissions has no column named field
+2025-06-03 16:45:01,556 - ERROR - Database path: verification_data.db
+2025-06-03 16:45:01,557 - ERROR - Result data: {'timestamp': '2025-06-03T16:44:38.322724', 'image_path': 'C:\\Users\\YOUSUF~1\\AppData\\Local\\Temp\\tmphhzzus33.jpg', 'category': 'courses', 'activity_title': 'data science', 'user_name': 'yossuf yasser mohamed', 'verification_status': 'verified', 'confidence_score': 0.8949999999999999, 'details': {'proof_type': 'document', 'extracted_text': 'A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETIO', 'text_analysis': {'found_keywords': ['certificate', 'completion', 'learning', 'bootcamp'], 'keyword_count': 4, 'relevance_score': 1.0, 'classification': 'courses and data science related document', 'classification_score': 0.4513889253139496, 'is_relevant': True}, 'activity_name_check': {'found': True, 'matched_words': ['data', 'science'], 'score': 1.0}, 'name_check': {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}}, 'valid_for_time': True, 'time_validation': {'is_valid': True, 'confidence_percentage': 89.49999999999999, 'reason': 'All verification checks passed'}, 'recommendations': [], 'verification_report': {'proof_type': 'Document', 'text_analysis': {'keywords_found': 4, 'found_keywords': ['certificate', 'completion', 'learning', 'bootcamp'], 'relevance_score': 1.0}, 'activity_verification': {'activity_title': 'data science', 'found': True, 'match_score': 1.0, 'matched_words': ['data', 'science'], 'verified': True}, 'name_verification': {'name': 'yossuf yasser mohamed', 'found': True, 'match_score': 0.7, 'matched_parts': ['yossuf', 'yasser'], 'verified': True}, 'overall_status': {'status': 'verified', 'confidence_score': 0.8949999999999999, 'valid_for_time': True, 'confidence_percentage': 89.49999999999999}}, 'original_time': 33.0, 'calculated_time': 99.0, 'time_unit': 'hours', 'multiplier': 3}
+2025-06-03 16:45:01,558 - ERROR - Error processing verification request: table submissions has no column named field
+2025-06-03 16:53:43,993 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science'
+2025-06-03 16:53:43,996 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmppfpsaqfx.jpg
+2025-06-03 16:53:43,997 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-03 16:53:47,512 - INFO - Extracted text length: 1018 characters
+2025-06-03 16:53:47,513 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 16:53:47,515 - INFO - Document detected by text density
+2025-06-03 16:53:50,709 - INFO - Extracted text length: 1018 characters
+2025-06-03 16:53:50,709 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 16:54:06,599 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-03 16:54:06,599 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-03 16:54:06,600 - INFO - Found exact name part in text: yossuf
+2025-06-03 16:54:06,600 - INFO - Found exact name part in text: yasser
+2025-06-03 16:54:06,601 - INFO - Found first name match
+2025-06-03 16:54:06,601 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-03 16:54:06,602 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-03 16:54:06,602 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-03 16:54:06,605 - ERROR - Error saving submission: table submissions has no column named field
+2025-06-03 16:54:06,606 - ERROR - SQLite error saving verification result: table submissions has no column named field
+2025-06-03 16:54:06,606 - ERROR - Database path: verification_data.db
+2025-06-03 16:54:06,607 - ERROR - Result data: {'timestamp': '2025-06-03T16:53:43.997236', 'image_path': 'C:\\Users\\YOUSUF~1\\AppData\\Local\\Temp\\tmppfpsaqfx.jpg', 'category': 'courses', 'activity_title': 'data science', 'user_name': 'yossuf yasser mohamed', 'verification_status': 'verified', 'confidence_score': 0.8949999999999999, 'details': {'proof_type': 'document', 'extracted_text': 'A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETIO', 'text_analysis': {'found_keywords': ['certificate', 'completion', 'learning', 'bootcamp'], 'keyword_count': 4, 'relevance_score': 1.0, 'classification': 'courses and data science related document', 'classification_score': 0.4513889253139496, 'is_relevant': True}, 'activity_name_check': {'found': True, 'matched_words': ['data', 'science'], 'score': 1.0}, 'name_check': {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}}, 'valid_for_time': True, 'time_validation': {'is_valid': True, 'confidence_percentage': 89.49999999999999, 'reason': 'All verification checks passed'}, 'recommendations': [], 'verification_report': {'proof_type': 'Document', 'text_analysis': {'keywords_found': 4, 'found_keywords': ['certificate', 'completion', 'learning', 'bootcamp'], 'relevance_score': 1.0}, 'activity_verification': {'activity_title': 'data science', 'found': True, 'match_score': 1.0, 'matched_words': ['data', 'science'], 'verified': True}, 'name_verification': {'name': 'yossuf yasser mohamed', 'found': True, 'match_score': 0.7, 'matched_parts': ['yossuf', 'yasser'], 'verified': True}, 'overall_status': {'status': 'verified', 'confidence_score': 0.8949999999999999, 'valid_for_time': True, 'confidence_percentage': 89.49999999999999}}, 'original_time': 50.0, 'calculated_time': 150.0, 'time_unit': 'hours', 'multiplier': 3}
+2025-06-03 16:54:06,607 - ERROR - Error processing verification request: table submissions has no column named field
+2025-06-03 16:57:14,905 - INFO - Auto-selected port: 8002
+2025-06-03 16:57:14,906 - INFO - Initializing CertificateVerificationAPI
+2025-06-03 16:57:14,906 - INFO - Creating ProofVerifier instance and VerificationService
+2025-06-03 16:57:27,437 - INFO - Models initialized successfully
+2025-06-03 16:57:27,517 - INFO - Database initialized successfully
+2025-06-03 16:57:27,518 - INFO - Services created successfully
+2025-06-03 16:57:27,530 - INFO - Starting server on 0.0.0.0:8002
+2025-06-03 16:58:04,728 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'courses'
+2025-06-03 16:58:04,734 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpg_f5pw1r.jpg
+2025-06-03 16:58:04,734 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-03 16:58:08,314 - INFO - Extracted text length: 1018 characters
+2025-06-03 16:58:08,315 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 16:58:08,317 - INFO - Document detected by text density
+2025-06-03 16:58:11,682 - INFO - Extracted text length: 1018 characters
+2025-06-03 16:58:11,683 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 16:58:29,616 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-03 16:58:29,617 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-03 16:58:29,617 - INFO - Found exact name part in text: yossuf
+2025-06-03 16:58:29,617 - INFO - Found exact name part in text: yasser
+2025-06-03 16:58:29,618 - INFO - Found first name match
+2025-06-03 16:58:29,618 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-03 16:58:29,618 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-03 16:58:29,618 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-03 16:58:29,677 - INFO - Successfully saved verification result as submission with ID: 1
+2025-06-03 16:59:07,619 - INFO - Received batch submission request for 1 activities
+2025-06-03 17:03:26,169 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'courses'
+2025-06-03 17:03:26,171 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yasser mohamed
+2025-06-03 17:17:16,468 - INFO - Auto-selected port: 8002
+2025-06-03 17:17:16,469 - INFO - Initializing CertificateVerificationAPI
+2025-06-03 17:17:16,470 - INFO - Creating ProofVerifier instance and VerificationService
+2025-06-03 17:17:29,383 - INFO - Models initialized successfully
+2025-06-03 17:17:29,384 - INFO - Removed existing database
+2025-06-03 17:17:29,428 - INFO - Database initialized successfully
+2025-06-03 17:17:29,429 - INFO - Services created successfully
+2025-06-03 17:17:29,444 - INFO - Starting server on 0.0.0.0:8002
+2025-06-03 17:18:03,190 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'courses'
+2025-06-03 17:18:03,194 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp1h7agd8w.jpg
+2025-06-03 17:18:03,195 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-03 17:18:06,831 - INFO - Extracted text length: 1018 characters
+2025-06-03 17:18:06,831 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 17:18:06,834 - INFO - Document detected by text density
+2025-06-03 17:18:10,078 - INFO - Extracted text length: 1018 characters
+2025-06-03 17:18:10,079 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 17:18:28,182 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-03 17:18:28,183 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-03 17:18:28,183 - INFO - Found exact name part in text: yossuf
+2025-06-03 17:18:28,184 - INFO - Found exact name part in text: yasser
+2025-06-03 17:18:28,184 - INFO - Found first name match
+2025-06-03 17:18:28,185 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-03 17:18:28,185 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-03 17:18:28,185 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-03 17:18:28,281 - INFO - Successfully saved verification result as submission with ID: 1
+2025-06-03 17:20:55,996 - INFO - Received batch submission request for 1 activities
+2025-06-03 17:21:14,916 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'courses'
+2025-06-03 17:21:14,917 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yasser mohamed
+2025-06-03 17:27:53,960 - INFO - Verification request - Category: courses, User: 'yossuf yasser rabie', Activity: 'data science', Field: 'courses'
+2025-06-03 17:27:53,963 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpfydh0c6n.jpg
+2025-06-03 17:27:53,964 - INFO - Starting verification for category: courses, user: 'yossuf yasser rabie', activity: 'data science'
+2025-06-03 17:27:57,539 - INFO - Extracted text length: 1018 characters
+2025-06-03 17:27:57,540 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 17:27:57,542 - INFO - Document detected by text density
+2025-06-03 17:28:00,429 - INFO - Extracted text length: 1018 characters
+2025-06-03 17:28:00,429 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 17:28:14,933 - INFO - Checking name in text. Name to check: 'yossuf yasser rabie'
+2025-06-03 17:28:14,934 - INFO - Name parts to check: ['yossuf', 'yasser', 'rabie']
+2025-06-03 17:28:14,934 - INFO - Found exact name part in text: yossuf
+2025-06-03 17:28:14,935 - INFO - Found exact name part in text: yasser
+2025-06-03 17:28:14,935 - INFO - Found first name match
+2025-06-03 17:28:14,936 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-03 17:28:14,936 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-03 17:28:14,937 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser rabie
+2025-06-03 17:28:14,959 - INFO - Successfully saved verification result as submission with ID: 2
+2025-06-03 17:32:58,808 - INFO - Verification request - Category: courses, User: 'yossuf yasser rabie', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-03 17:32:58,810 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yasser rabie
+2025-06-03 17:33:18,158 - INFO - Verification request - Category: workshops, User: 'yossuf yasser rabie', Activity: 'building skeletons', Field: 'data_sciences_ai'
+2025-06-03 17:33:18,166 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp0y3zrpap.png
+2025-06-03 17:33:18,167 - INFO - Starting verification for category: workshops, user: 'yossuf yasser rabie', activity: 'building skeletons'
+2025-06-03 17:33:18,503 - INFO - Document detected by structure analysis
+2025-06-03 17:33:18,911 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-03 17:33:18,912 - INFO - Verification data: status=verified, category=workshops, user=yossuf yasser rabie
+2025-06-03 17:33:18,940 - INFO - Successfully saved verification result as submission with ID: 3
+2025-06-03 17:37:54,149 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-03 17:37:54,151 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yasser mohamed
+2025-06-03 17:38:24,543 - INFO - Verification request - Category: sports, User: 'yossuf yasser mohamed', Activity: 'football', Field: 'other'
+2025-06-03 17:38:24,545 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpejscnxrj.jpg
+2025-06-03 17:38:24,545 - INFO - Starting verification for category: sports, user: 'yossuf yasser mohamed', activity: 'football'
+2025-06-03 17:38:24,742 - INFO - Document detected by structure analysis
+2025-06-03 17:38:24,901 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-03 17:38:24,902 - INFO - Verification data: status=verified, category=sports, user=yossuf yasser mohamed
+2025-06-03 17:38:24,940 - INFO - Successfully saved verification result as submission with ID: 4
+2025-06-03 17:39:14,121 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-03 17:39:14,122 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yasser mohamed
+2025-06-03 17:45:58,496 - INFO - Auto-selected port: 8002
+2025-06-03 17:45:58,497 - INFO - Initializing CertificateVerificationAPI
+2025-06-03 17:45:58,497 - INFO - Creating ProofVerifier instance and VerificationService
+2025-06-03 17:46:11,066 - INFO - Models initialized successfully
+2025-06-03 17:46:11,067 - INFO - Removed existing database
+2025-06-03 17:46:11,127 - INFO - Database initialized successfully
+2025-06-03 17:46:11,128 - INFO - Services created successfully
+2025-06-03 17:46:11,142 - INFO - Starting server on 0.0.0.0:8002
+2025-06-03 17:46:32,925 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-03 17:46:32,927 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpumikyk6x.jpg
+2025-06-03 17:46:32,928 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-03 17:46:36,560 - INFO - Extracted text length: 1018 characters
+2025-06-03 17:46:36,560 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 17:46:36,563 - INFO - Document detected by text density
+2025-06-03 17:46:39,578 - INFO - Extracted text length: 1018 characters
+2025-06-03 17:46:39,578 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-03 17:46:56,856 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-03 17:46:56,857 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-03 17:46:56,858 - INFO - Found exact name part in text: yossuf
+2025-06-03 17:46:56,858 - INFO - Found exact name part in text: yasser
+2025-06-03 17:46:56,859 - INFO - Found first name match
+2025-06-03 17:46:56,859 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-03 17:46:56,860 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-03 17:46:56,860 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-03 17:46:56,888 - INFO - Successfully saved verification result as submission with ID: 1
+2025-06-04 14:00:16,499 - INFO - Auto-selected port: 8002
+2025-06-04 14:00:16,500 - INFO - Initializing CertificateVerificationAPI
+2025-06-04 14:00:16,501 - INFO - Creating ProofVerifier instance and VerificationService
+2025-06-04 14:00:32,842 - INFO - Models initialized successfully
+2025-06-04 14:00:32,844 - INFO - Removed existing database
+2025-06-04 14:00:32,886 - INFO - Database initialized successfully
+2025-06-04 14:00:32,887 - INFO - Services created successfully
+2025-06-04 14:00:32,903 - INFO - Starting server on 0.0.0.0:8002
+2025-06-04 14:01:41,272 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-04 14:01:41,274 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmphfm1ts2k.jpg
+2025-06-04 14:01:41,275 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-04 14:01:45,435 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:01:45,436 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:01:45,439 - INFO - Document detected by text density
+2025-06-04 14:01:49,062 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:01:49,063 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:02:08,114 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-04 14:02:08,115 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-04 14:02:08,115 - INFO - Found exact name part in text: yossuf
+2025-06-04 14:02:08,116 - INFO - Found exact name part in text: yasser
+2025-06-04 14:02:08,116 - INFO - Found first name match
+2025-06-04 14:02:08,117 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-04 14:02:08,117 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-04 14:02:08,118 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-04 14:02:08,147 - INFO - Successfully saved verification result as submission with ID: 1
+2025-06-04 14:03:31,721 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-04 14:03:31,723 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpvigsj1uj.pdf
+2025-06-04 14:03:31,723 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-04 14:03:32,249 - ERROR - Error in document detection: cannot identify image file 'C:\\Users\\YOUSUF~1\\AppData\\Local\\Temp\\tmpvigsj1uj.pdf'
+2025-06-04 14:03:32,250 - ERROR - Failed to read image
+2025-06-04 14:03:32,252 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-04 14:03:32,253 - WARNING - Missing input - Name: 'yossuf yasser mohamed', Text empty: True
+2025-06-04 14:03:32,253 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-04 14:03:32,254 - INFO - Verification data: status=unverified, category=courses, user=yossuf yasser mohamed
+2025-06-04 14:03:32,266 - INFO - Successfully saved verification result as submission with ID: 2
+2025-06-04 14:04:00,348 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-04 14:04:00,350 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp7dpj_u6t.jpg
+2025-06-04 14:04:00,350 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-04 14:04:05,479 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:04:05,480 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:04:05,483 - INFO - Document detected by text density
+2025-06-04 14:04:10,336 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:04:10,337 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:04:31,940 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-04 14:04:31,941 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-04 14:04:31,941 - INFO - Found exact name part in text: yossuf
+2025-06-04 14:04:31,942 - INFO - Found exact name part in text: yasser
+2025-06-04 14:04:31,942 - INFO - Found first name match
+2025-06-04 14:04:31,943 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-04 14:04:31,943 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-04 14:04:31,944 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-04 14:04:31,961 - INFO - Successfully saved verification result as submission with ID: 3
+2025-06-04 14:04:31,980 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-04 14:04:31,985 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpj68w3zcp.jpg
+2025-06-04 14:04:31,986 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-04 14:04:38,070 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:04:38,071 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:04:38,073 - INFO - Document detected by text density
+2025-06-04 14:04:43,376 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:04:43,376 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:05:34,583 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-04 14:05:34,583 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-04 14:05:34,584 - INFO - Found exact name part in text: yossuf
+2025-06-04 14:05:34,584 - INFO - Found exact name part in text: yasser
+2025-06-04 14:05:34,585 - INFO - Found first name match
+2025-06-04 14:05:34,585 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-04 14:05:34,586 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-04 14:05:34,586 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-04 14:05:34,604 - INFO - Successfully saved verification result as submission with ID: 4
+2025-06-04 14:29:45,434 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-04 14:29:45,441 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp4rzubza3.jpg
+2025-06-04 14:29:45,443 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-04 14:29:52,224 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:29:52,225 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:29:52,228 - INFO - Document detected by text density
+2025-06-04 14:29:57,638 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:29:57,638 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:30:27,173 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-04 14:30:27,174 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-04 14:30:27,175 - INFO - Found exact name part in text: yossuf
+2025-06-04 14:30:27,175 - INFO - Found exact name part in text: yasser
+2025-06-04 14:30:27,176 - INFO - Found first name match
+2025-06-04 14:30:27,177 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-04 14:30:27,178 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-04 14:30:27,179 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-04 14:30:27,236 - INFO - Successfully saved verification result as submission with ID: 5
+2025-06-04 14:36:10,550 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-04 14:36:10,553 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp3n8wmue6.jpg
+2025-06-04 14:36:10,553 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-04 14:36:15,850 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:36:15,850 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:36:15,853 - INFO - Document detected by text density
+2025-06-04 14:36:21,422 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:36:21,423 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:36:43,987 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-04 14:36:43,988 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-04 14:36:43,988 - INFO - Found exact name part in text: yossuf
+2025-06-04 14:36:43,989 - INFO - Found exact name part in text: yasser
+2025-06-04 14:36:43,989 - INFO - Found first name match
+2025-06-04 14:36:43,989 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-04 14:36:43,990 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-04 14:36:43,990 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-04 14:36:44,042 - INFO - Successfully saved verification result as submission with ID: 6
+2025-06-04 14:37:39,825 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-04 14:37:39,829 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp8wzpqc6w.jpg
+2025-06-04 14:37:39,829 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-04 14:37:45,738 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:37:45,738 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:37:45,741 - INFO - Document detected by text density
+2025-06-04 14:37:50,199 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:37:50,200 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:38:17,419 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-04 14:38:17,420 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-04 14:38:17,420 - INFO - Found exact name part in text: yossuf
+2025-06-04 14:38:17,421 - INFO - Found exact name part in text: yasser
+2025-06-04 14:38:17,422 - INFO - Found first name match
+2025-06-04 14:38:17,424 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-04 14:38:17,426 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-04 14:38:17,427 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-04 14:38:17,486 - INFO - Successfully saved verification result as submission with ID: 7
+2025-06-04 14:38:53,876 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-04 14:38:53,880 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp32tx1xxp.jpg
+2025-06-04 14:38:53,882 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-04 14:39:00,496 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:39:00,497 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:39:00,500 - INFO - Document detected by text density
+2025-06-04 14:39:05,136 - INFO - Extracted text length: 1018 characters
+2025-06-04 14:39:05,137 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 14:39:27,370 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-04 14:39:27,371 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-04 14:39:27,371 - INFO - Found exact name part in text: yossuf
+2025-06-04 14:39:27,372 - INFO - Found exact name part in text: yasser
+2025-06-04 14:39:27,372 - INFO - Found first name match
+2025-06-04 14:39:27,373 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-04 14:39:27,374 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-04 14:39:27,374 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-04 14:39:27,433 - INFO - Successfully saved verification result as submission with ID: 8
+2025-06-04 15:00:52,424 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-04 15:00:52,426 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpvp7g7q6i.jpg
+2025-06-04 15:00:52,426 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-04 15:00:55,968 - INFO - Extracted text length: 1018 characters
+2025-06-04 15:00:55,969 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 15:00:55,971 - INFO - Document detected by text density
+2025-06-04 15:00:59,071 - INFO - Extracted text length: 1018 characters
+2025-06-04 15:00:59,071 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 15:01:15,202 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-04 15:01:15,203 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-04 15:01:15,204 - INFO - Found exact name part in text: yossuf
+2025-06-04 15:01:15,204 - INFO - Found exact name part in text: yasser
+2025-06-04 15:01:15,204 - INFO - Found first name match
+2025-06-04 15:01:15,205 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-04 15:01:15,205 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-04 15:01:15,205 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-04 15:01:15,221 - INFO - Successfully saved verification result as submission with ID: 9
+2025-06-04 15:25:20,488 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'undefined'
+2025-06-04 15:25:20,490 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpl68u_lbo.jpg
+2025-06-04 15:25:20,490 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-04 15:25:24,282 - INFO - Extracted text length: 1018 characters
+2025-06-04 15:25:24,283 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 15:25:24,286 - INFO - Document detected by text density
+2025-06-04 15:25:27,345 - INFO - Extracted text length: 1018 characters
+2025-06-04 15:25:27,346 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-04 15:25:41,844 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-04 15:25:41,845 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-04 15:25:41,845 - INFO - Found exact name part in text: yossuf
+2025-06-04 15:25:41,846 - INFO - Found exact name part in text: yasser
+2025-06-04 15:25:41,846 - INFO - Found first name match
+2025-06-04 15:25:41,846 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-04 15:25:41,847 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-04 15:25:41,847 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-04 15:25:41,903 - INFO - Successfully saved verification result as submission with ID: 10
+2025-06-04 15:25:54,995 - INFO - Received batch submission request for 1 activities
+2025-06-10 14:20:49,765 - INFO - Auto-selected port: 8002
+2025-06-10 14:20:49,765 - INFO - Initializing CertificateVerificationAPI
+2025-06-10 14:20:49,766 - INFO - Creating ProofVerifier instance and VerificationService
+2025-06-10 14:21:05,356 - INFO - Models initialized successfully
+2025-06-10 14:21:05,358 - INFO - Removed existing database
+2025-06-10 14:21:05,408 - INFO - Database initialized successfully
+2025-06-10 14:21:05,408 - INFO - Services created successfully
+2025-06-10 14:21:05,423 - INFO - Starting server on 0.0.0.0:8002
+2025-06-10 14:23:13,935 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'undefined'
+2025-06-10 14:23:13,938 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpwi79nydz.pdf
+2025-06-10 14:23:13,939 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-10 14:23:14,408 - ERROR - Error in document detection: cannot identify image file 'C:\\Users\\YOUSUF~1\\AppData\\Local\\Temp\\tmpwi79nydz.pdf'
+2025-06-10 14:23:14,414 - ERROR - Failed to read image
+2025-06-10 14:23:14,424 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-10 14:23:14,424 - WARNING - Missing input - Name: 'yossuf yasser mohamed', Text empty: True
+2025-06-10 14:23:14,425 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 14:23:14,425 - INFO - Verification data: status=unverified, category=courses, user=yossuf yasser mohamed
+2025-06-10 14:23:14,449 - INFO - Successfully saved verification result as submission with ID: 1
+2025-06-10 14:24:00,914 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'undefined'
+2025-06-10 14:24:00,917 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpkoksp5uh.jpg
+2025-06-10 14:24:00,918 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-10 14:24:05,571 - INFO - Extracted text length: 1018 characters
+2025-06-10 14:24:05,571 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-10 14:24:05,574 - INFO - Document detected by text density
+2025-06-10 14:24:08,629 - INFO - Extracted text length: 1018 characters
+2025-06-10 14:24:08,630 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-10 14:24:26,487 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-10 14:24:26,488 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-10 14:24:26,488 - INFO - Found exact name part in text: yossuf
+2025-06-10 14:24:26,489 - INFO - Found exact name part in text: yasser
+2025-06-10 14:24:26,489 - INFO - Found first name match
+2025-06-10 14:24:26,490 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-10 14:24:26,490 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 14:24:26,490 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-10 14:24:26,506 - INFO - Successfully saved verification result as submission with ID: 2
+2025-06-10 14:27:16,657 - INFO - Received batch submission request for 1 activities
+2025-06-10 16:46:25,641 - INFO - Auto-selected port: 8002
+2025-06-10 16:46:25,642 - INFO - Initializing CertificateVerificationAPI
+2025-06-10 16:46:25,643 - INFO - Creating ProofVerifier instance and VerificationService
+2025-06-10 16:46:43,205 - INFO - Models initialized successfully
+2025-06-10 16:50:41,581 - INFO - Auto-selected port: 8002
+2025-06-10 16:50:41,581 - INFO - Initializing CertificateVerificationAPI
+2025-06-10 16:50:41,582 - INFO - Creating ProofVerifier instance and VerificationService
+2025-06-10 16:50:54,649 - INFO - Models initialized successfully
+2025-06-10 16:50:54,650 - INFO - Removed existing database
+2025-06-10 16:50:54,741 - INFO - Database initialized successfully
+2025-06-10 16:50:54,742 - INFO - Services created successfully
+2025-06-10 16:50:54,765 - INFO - Starting server on 0.0.0.0:8002
+2025-06-10 16:54:39,146 - INFO - Verification request - Category: courses, User: 'yossuf yassermohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-10 16:54:39,148 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp3nldcarx.jpg
+2025-06-10 16:54:39,149 - INFO - Starting verification for category: courses, user: 'yossuf yassermohamed', activity: 'data science'
+2025-06-10 16:54:43,111 - INFO - Extracted text length: 1018 characters
+2025-06-10 16:54:43,112 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-10 16:54:43,114 - INFO - Document detected by text density
+2025-06-10 16:54:46,238 - INFO - Extracted text length: 1018 characters
+2025-06-10 16:54:46,238 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-10 16:55:05,061 - INFO - Checking name in text. Name to check: 'yossuf yassermohamed'
+2025-06-10 16:55:05,061 - INFO - Name parts to check: ['yossuf', 'yassermohamed']
+2025-06-10 16:55:05,061 - INFO - Found exact name part in text: yossuf
+2025-06-10 16:55:05,062 - INFO - Found first name match
+2025-06-10 16:55:05,063 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf'], 'score': 0.7, 'first_name_found': True}
+2025-06-10 16:55:05,063 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 16:55:05,063 - INFO - Verification data: status=verified, category=courses, user=yossuf yassermohamed
+2025-06-10 16:55:05,088 - INFO - Successfully saved verification result as submission with ID: 1
+2025-06-10 17:00:04,196 - INFO - Verification request - Category: workshops, User: 'yossuf yassermohamed', Activity: 'building skeletons', Field: 'data_sciences_ai'
+2025-06-10 17:00:04,203 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpoz2dhd3x.png
+2025-06-10 17:00:04,203 - INFO - Starting verification for category: workshops, user: 'yossuf yassermohamed', activity: 'building skeletons'
+2025-06-10 17:00:04,480 - INFO - Document detected by structure analysis
+2025-06-10 17:00:04,771 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 17:00:04,771 - INFO - Verification data: status=verified, category=workshops, user=yossuf yassermohamed
+2025-06-10 17:00:04,789 - INFO - Successfully saved verification result as submission with ID: 2
+2025-06-10 17:01:04,235 - INFO - Verification request - Category: sports, User: 'yossuf yassermohamed', Activity: 'data science', Field: 'other'
+2025-06-10 17:01:04,238 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpptbcuvgi.jpg
+2025-06-10 17:01:04,238 - INFO - Starting verification for category: sports, user: 'yossuf yassermohamed', activity: 'data science'
+2025-06-10 17:01:04,458 - INFO - Document detected by structure analysis
+2025-06-10 17:01:04,643 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 17:01:04,644 - INFO - Verification data: status=unverified, category=sports, user=yossuf yassermohamed
+2025-06-10 17:01:04,701 - INFO - Successfully saved verification result as submission with ID: 3
+2025-06-10 17:01:25,763 - INFO - Verification request - Category: sports, User: 'yossuf yassermohamed', Activity: 'football', Field: 'other'
+2025-06-10 17:01:25,764 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp9aotzzte.jpg
+2025-06-10 17:01:25,765 - INFO - Starting verification for category: sports, user: 'yossuf yassermohamed', activity: 'football'
+2025-06-10 17:01:26,000 - INFO - Document detected by structure analysis
+2025-06-10 17:01:26,179 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 17:01:26,180 - INFO - Verification data: status=verified, category=sports, user=yossuf yassermohamed
+2025-06-10 17:01:26,194 - INFO - Successfully saved verification result as submission with ID: 4
+2025-06-10 17:02:12,671 - INFO - Received batch submission request for 3 activities
+2025-06-10 17:15:01,715 - INFO - Verification request - Category: courses, User: 'yossuf yassermohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-10 17:15:01,716 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yassermohamed
+2025-06-10 17:15:03,434 - INFO - Received batch submission request for 1 activities
+2025-06-10 17:32:57,314 - INFO - Auto-selected port: 8002
+2025-06-10 17:32:57,316 - INFO - Initializing CertificateVerificationAPI
+2025-06-10 17:32:57,316 - INFO - Creating ProofVerifier instance and VerificationService
+2025-06-10 17:33:12,087 - INFO - Models initialized successfully
+2025-06-10 17:33:12,089 - INFO - Removed existing database
+2025-06-10 17:33:12,134 - INFO - Database initialized successfully
+2025-06-10 17:33:12,135 - INFO - Services created successfully
+2025-06-10 17:33:12,152 - INFO - Starting server on 0.0.0.0:8002
+2025-06-10 17:35:04,250 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-10 17:35:04,254 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp_azyikp9.jpg
+2025-06-10 17:35:04,255 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-10 17:35:08,341 - INFO - Extracted text length: 1018 characters
+2025-06-10 17:35:08,342 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-10 17:35:08,344 - INFO - Document detected by text density
+2025-06-10 17:35:11,478 - INFO - Extracted text length: 1018 characters
+2025-06-10 17:35:11,478 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-10 17:35:28,396 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-10 17:35:28,397 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-10 17:35:28,398 - INFO - Found exact name part in text: yossuf
+2025-06-10 17:35:28,398 - INFO - Found exact name part in text: yasser
+2025-06-10 17:35:28,398 - INFO - Found first name match
+2025-06-10 17:35:28,398 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-10 17:35:28,399 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 17:35:28,399 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-10 17:35:28,427 - INFO - Successfully saved verification result as submission with ID: 1
+2025-06-10 17:36:01,706 - INFO - Verification request - Category: workshops, User: 'yossuf yasser mohamed', Activity: 'building skeletons', Field: 'data_sciences_ai'
+2025-06-10 17:36:01,713 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpawwrisj5.png
+2025-06-10 17:36:01,714 - INFO - Starting verification for category: workshops, user: 'yossuf yasser mohamed', activity: 'building skeletons'
+2025-06-10 17:36:02,010 - INFO - Document detected by structure analysis
+2025-06-10 17:36:02,288 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 17:36:02,289 - INFO - Verification data: status=verified, category=workshops, user=yossuf yasser mohamed
+2025-06-10 17:36:02,305 - INFO - Successfully saved verification result as submission with ID: 2
+2025-06-10 17:36:13,069 - INFO - Received batch submission request for 2 activities
+2025-06-10 17:36:13,070 - INFO - Processing activity with verification_id: 1
+2025-06-10 17:36:13,070 - INFO - Activity data: {'verification_id': 1, 'category': 'courses', 'activity_title': 'data science', 'time_spent': 40, 'time_unit': 'hours'}
+2025-06-10 17:36:13,073 - INFO - Retrieved verification: {'submission_id': 1, 'user_id': 1, 'category': 'courses', 'activity_title': 'data science', 'verification_status': 'verified', 'original_time': 40.0, 'calculated_time': 120.0, 'time_unit': 'hours', 'multiplier': 1.0, 'verification_report': {'proof_type': 'Document', 'text_analysis': {'keywords_found': 4, 'found_keywords': ['certificate', 'completion', 'learning', 'bootcamp'], 'relevance_score': 1.0}, 'activity_verification': {'activity_title': 'data science', 'found': True, 'match_score': 1.0, 'matched_words': ['data', 'science'], 'verified': True}, 'name_verification': {'name': 'yossuf yasser mohamed', 'found': True, 'match_score': 0.7, 'matched_parts': ['yossuf', 'yasser'], 'verified': True}, 'overall_status': {'status': 'verified', 'confidence_score': 0.8949999999999999, 'valid_for_time': True, 'confidence_percentage': 89.49999999999999}}, 'confidence_score': 0.8949999999999999, 'recommendations': [], 'image_path': 'C:\\Users\\YOUSUF~1\\AppData\\Local\\Temp\\tmp_azyikp9.jpg', 'field_id': 1, 'user_name': 'yossuf yasser mohamed'}
+2025-06-10 17:36:13,073 - INFO - Processing activity with verification_id: 2
+2025-06-10 17:36:13,073 - INFO - Activity data: {'verification_id': 2, 'category': 'workshops', 'activity_title': 'building skeletons', 'time_spent': 30, 'time_unit': 'hours'}
+2025-06-10 17:36:13,076 - INFO - Retrieved verification: {'submission_id': 2, 'user_id': 1, 'category': 'workshops', 'activity_title': 'building skeletons', 'verification_status': 'verified', 'original_time': 30.0, 'calculated_time': 120.0, 'time_unit': 'hours', 'multiplier': 1.0, 'verification_report': {'proof_type': 'Activity Photo'}, 'confidence_score': 0.6465626955032349, 'recommendations': [], 'image_path': 'C:\\Users\\YOUSUF~1\\AppData\\Local\\Temp\\tmpawwrisj5.png', 'field_id': 1, 'user_name': 'yossuf yasser mohamed'}
+2025-06-10 18:04:02,349 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-10 18:04:02,352 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp4upipwrt.jpg
+2025-06-10 18:04:02,352 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-10 18:04:02,590 - INFO - Document detected by structure analysis
+2025-06-10 18:04:02,765 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 18:04:02,765 - INFO - Verification data: status=unverified, category=courses, user=yossuf yasser mohamed
+2025-06-10 18:04:02,781 - INFO - Successfully saved verification result as submission with ID: 3
+2025-06-10 18:04:49,515 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-10 18:04:49,516 - INFO - Using cached result for 2c9b8f6d7f4f3b9e7fb4a6a847b58a94fa60e645cbef593211cde49b7bc30f80:courses:data science:yossuf yasser mohamed
+2025-06-10 18:13:58,677 - INFO - Verification request - Category: sports, User: 'yossuf yasser mohamed', Activity: 'football', Field: 'other'
+2025-06-10 18:13:58,679 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmprgwwhhkz.jpg
+2025-06-10 18:13:58,679 - INFO - Starting verification for category: sports, user: 'yossuf yasser mohamed', activity: 'football'
+2025-06-10 18:13:58,899 - INFO - Document detected by structure analysis
+2025-06-10 18:13:59,115 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 18:13:59,115 - INFO - Verification data: status=verified, category=sports, user=yossuf yasser mohamed
+2025-06-10 18:13:59,140 - INFO - Successfully saved verification result as submission with ID: 4
+2025-06-10 18:14:01,559 - INFO - Received batch submission request for 1 activities
+2025-06-10 18:14:01,561 - INFO - Processing activity with verification_id: 4
+2025-06-10 18:14:01,562 - INFO - Activity data: {'verification_id': 4, 'category': 'sports', 'activity_title': 'football', 'time_spent': 10, 'time_unit': 'months'}
+2025-06-10 18:14:01,564 - INFO - Retrieved verification: {'submission_id': 4, 'user_id': 1, 'category': 'sports', 'activity_title': 'football', 'verification_status': 'verified', 'original_time': 10.0, 'calculated_time': 20.0, 'time_unit': 'hours', 'multiplier': 1.0, 'verification_report': {'proof_type': 'Activity Photo'}, 'confidence_score': 0.6285229325294495, 'recommendations': [], 'image_path': 'C:\\Users\\YOUSUF~1\\AppData\\Local\\Temp\\tmprgwwhhkz.jpg', 'field_id': 2, 'user_name': 'yossuf yasser mohamed'}
+2025-06-10 18:24:30,299 - INFO - Auto-selected port: 8002
+2025-06-10 18:24:30,299 - INFO - Initializing CertificateVerificationAPI
+2025-06-10 18:24:30,300 - INFO - Creating ProofVerifier instance and VerificationService
+2025-06-10 18:24:45,995 - INFO - Models initialized successfully
+2025-06-10 18:26:21,041 - INFO - Auto-selected port: 8002
+2025-06-10 18:26:21,042 - INFO - Initializing CertificateVerificationAPI
+2025-06-10 18:26:21,042 - INFO - Creating ProofVerifier instance and VerificationService
+2025-06-10 18:26:33,677 - INFO - Models initialized successfully
+2025-06-10 18:26:33,678 - INFO - Removed existing database
+2025-06-10 18:26:33,733 - INFO - Database initialized successfully
+2025-06-10 18:26:33,734 - INFO - Services created successfully
+2025-06-10 18:26:33,750 - INFO - Starting server on 0.0.0.0:8002
+2025-06-10 18:27:10,256 - INFO - Verification request - Category: courses, User: 'yossuf yasser mohamed', Activity: 'data science', Field: 'data_sciences_ai'
+2025-06-10 18:27:10,259 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpxjsadnt3.jpg
+2025-06-10 18:27:10,260 - INFO - Starting verification for category: courses, user: 'yossuf yasser mohamed', activity: 'data science'
+2025-06-10 18:27:14,320 - INFO - Extracted text length: 1018 characters
+2025-06-10 18:27:14,321 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-10 18:27:14,324 - INFO - Document detected by text density
+2025-06-10 18:27:17,692 - INFO - Extracted text length: 1018 characters
+2025-06-10 18:27:17,693 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-06-10 18:27:35,535 - INFO - Checking name in text. Name to check: 'yossuf yasser mohamed'
+2025-06-10 18:27:35,536 - INFO - Name parts to check: ['yossuf', 'yasser', 'mohamed']
+2025-06-10 18:27:35,536 - INFO - Found exact name part in text: yossuf
+2025-06-10 18:27:35,536 - INFO - Found exact name part in text: yasser
+2025-06-10 18:27:35,537 - INFO - Found first name match
+2025-06-10 18:27:35,537 - INFO - Name check result: {'found': True, 'matched_parts': ['yossuf', 'yasser'], 'score': 0.7, 'first_name_found': True}
+2025-06-10 18:27:35,538 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 18:27:35,538 - INFO - Verification data: status=verified, category=courses, user=yossuf yasser mohamed
+2025-06-10 18:27:35,566 - INFO - Successfully saved verification result as submission with ID: 1
+2025-06-10 18:32:10,886 - INFO - Auto-selected port: 8002
+2025-06-10 18:32:10,887 - INFO - Initializing CertificateVerificationAPI
+2025-06-10 18:32:10,887 - INFO - Creating ProofVerifier instance and VerificationService
+2025-06-10 18:32:23,722 - INFO - Models initialized successfully
+2025-06-10 18:32:23,723 - INFO - Database already exists at verification_data.db, preserving existing data
+2025-06-10 18:32:23,773 - INFO - Database initialized successfully
+2025-06-10 18:32:23,773 - INFO - Services created successfully
+2025-06-10 18:32:23,789 - INFO - Starting server on 0.0.0.0:8002
+2025-06-10 18:33:28,373 - INFO - Verification request - Category: workshops, User: 'yossuf yasser mohamed', Activity: 'building skeletons', Field: 'data_sciences_ai'
+2025-06-10 18:33:28,381 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmp8ud8xix9.png
+2025-06-10 18:33:28,381 - INFO - Starting verification for category: workshops, user: 'yossuf yasser mohamed', activity: 'building skeletons'
+2025-06-10 18:33:28,725 - INFO - Document detected by structure analysis
+2025-06-10 18:33:29,010 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 18:33:29,010 - INFO - Verification data: status=verified, category=workshops, user=yossuf yasser mohamed
+2025-06-10 18:33:29,027 - INFO - Successfully saved verification result as submission with ID: 2
+2025-06-10 18:33:58,482 - INFO - Verification request - Category: sports, User: 'yossuf yasser mohamed', Activity: 'football', Field: 'other'
+2025-06-10 18:33:58,483 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmptdg5wnl8.jpg
+2025-06-10 18:33:58,483 - INFO - Starting verification for category: sports, user: 'yossuf yasser mohamed', activity: 'football'
+2025-06-10 18:33:58,725 - INFO - Document detected by structure analysis
+2025-06-10 18:33:58,894 - INFO - Attempting to save verification result to database at verification_data.db
+2025-06-10 18:33:58,894 - INFO - Verification data: status=verified, category=sports, user=yossuf yasser mohamed
+2025-06-10 18:33:58,914 - INFO - Successfully saved verification result as submission with ID: 3
+2025-06-10 18:34:07,955 - INFO - Received batch submission request for 2 activities
+2025-06-10 18:34:07,955 - INFO - Processing activity with verification_id: 2
+2025-06-10 18:34:07,956 - INFO - Activity data: {'verification_id': 2, 'category': 'workshops', 'activity_title': 'building skeletons', 'time_spent': 40, 'time_unit': 'hours'}
+2025-06-10 18:34:07,957 - INFO - Retrieved verification: {'submission_id': 2, 'user_id': 1, 'category': 'workshops', 'activity_title': 'building skeletons', 'verification_status': 'verified', 'original_time': 40.0, 'calculated_time': 160.0, 'time_unit': 'hours', 'multiplier': 1.0, 'verification_report': {'proof_type': 'Activity Photo'}, 'confidence_score': 0.6465626955032349, 'recommendations': [], 'image_path': 'C:\\Users\\YOUSUF~1\\AppData\\Local\\Temp\\tmp8ud8xix9.png', 'field_id': 1, 'user_name': 'yossuf yasser mohamed'}
+2025-06-10 18:34:07,958 - INFO - Processing activity with verification_id: 3
+2025-06-10 18:34:07,958 - INFO - Activity data: {'verification_id': 3, 'category': 'sports', 'activity_title': 'football', 'time_spent': 4, 'time_unit': 'months'}
+2025-06-10 18:34:07,960 - INFO - Retrieved verification: {'submission_id': 3, 'user_id': 1, 'category': 'sports', 'activity_title': 'football', 'verification_status': 'verified', 'original_time': 4.0, 'calculated_time': 8.0, 'time_unit': 'hours', 'multiplier': 1.0, 'verification_report': {'proof_type': 'Activity Photo'}, 'confidence_score': 0.6285229325294495, 'recommendations': [], 'image_path': 'C:\\Users\\YOUSUF~1\\AppData\\Local\\Temp\\tmptdg5wnl8.jpg', 'field_id': 2, 'user_name': 'yossuf yasser mohamed'}
+2025-07-13 16:57:07,555 - INFO - Auto-selected port: 8002
+2025-07-13 16:57:07,556 - INFO - Initializing CertificateVerificationAPI
+2025-07-13 16:57:07,557 - INFO - Creating ProofVerifier instance and VerificationService
+2025-07-13 16:57:26,942 - INFO - Models initialized successfully
+2025-07-13 16:57:26,944 - INFO - Database already exists at verification_data.db, preserving existing data
+2025-07-13 16:57:27,005 - INFO - Database initialized successfully
+2025-07-13 16:57:27,006 - INFO - Services created successfully
+2025-07-13 16:57:27,054 - INFO - Starting server on 0.0.0.0:8002
+2025-07-13 17:01:07,537 - INFO - Verification request - Category: courses, User: 'bahgat', Activity: 'data science bootcamp', Field: 'data_sciences_ai'
+2025-07-13 17:01:07,542 - INFO - Saved uploaded file to: C:\Users\YOUSUF~1\AppData\Local\Temp\tmpstqytrv1.jpg
+2025-07-13 17:01:07,543 - INFO - Starting verification for category: courses, user: 'bahgat', activity: 'data science bootcamp'
+2025-07-13 17:01:13,252 - INFO - Extracted text length: 1018 characters
+2025-07-13 17:01:13,252 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-07-13 17:01:13,254 - INFO - Document detected by text density
+2025-07-13 17:01:17,174 - INFO - Extracted text length: 1018 characters
+2025-07-13 17:01:17,175 - INFO - Full extracted text: A Certificate no: UC-ce2la6c9-b47f-4b8e-8669-525{9be84168 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION C lete Machine L img & Data Sci Boot 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours Certificate no: UC-ce21a6c9-b47f-4b8e-8669-525f9be84i68 U fe e mM Certificate url: ude.my/UC-ce21a6c9-b47t-4b8e-8669-595{9be84(68 Reference Number: 0004 CERTIFICATE OF COMPLETION Complete Machine Learning & Data Science Bootcamp 2022 Instructors Andrei Neagoie, Daniel Bourke, Zero To Mastery Yossuf Yasser Date Aug. 26, 2022 Length 44 total hours
+2025-07-13 17:01:35,358 - INFO - Checking name in text. Name to check: 'bahgat'
+2025-07-13 17:01:35,359 - INFO - Name parts to check: ['bahgat']
+2025-07-13 17:01:35,359 - INFO - Name check result: {'found': False, 'matched_parts': [], 'score': 0.0, 'first_name_found': False}
+2025-07-13 17:01:35,360 - INFO - Attempting to save verification result to database at verification_data.db
+2025-07-13 17:01:35,361 - INFO - Verification data: status=unverified, category=courses, user=bahgat
+2025-07-13 17:01:35,519 - INFO - Successfully saved verification result as submission with ID: 4

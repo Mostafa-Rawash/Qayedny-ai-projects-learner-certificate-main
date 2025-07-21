@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Certificate Verification System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .main-container {
+            display: flex;
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .sidebar {
+            width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            height: fit-content;
+        }
+        
+        .content {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .time-summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .activity-form {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .activity-form label {
+            font-weight: 500;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .activity-form .form-control {
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            padding: 8px 12px;
+        }
+
+        .activity-form .form-select {
+            padding-right: 32px;
+            background-position: right 12px center;
+        }
+
+        .activity-form .input-group-text {
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+        }
+
+        .activity-form .btn-primary {
+            padding: 10px 24px;
+            font-weight: 500;
+        }
+
+        .form-text {
+            font-size: 0.875rem;
+            margin-top: 4px;
+        }
+
+        .activity-item {
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .activity-info {
+            flex-grow: 1;
+        }
+
+        .activity-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .activity-meta {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .activity-status {
+            margin-right: 15px;
+            color: #6c757d;
+        }
+
+        .delete-activity {
+            color: #dc3545;
+            background: none;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .delete-activity:hover {
+            color: #bd2130;
+        }
+
+        .field-stats {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .field-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 8px;
+        }
+
+        .field-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .field-name {
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .field-hours {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+
+        .field-progress {
+            height: 6px;
+            margin-top: 8px;
+            background-color: #e9ecef;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .field-progress-bar {
+            height: 100%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+
+        .verification-stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8em;
+            color: #6c757d;
+            margin-top: 4px;
+        }
+
+        .dashboard-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h4><i class="fas fa-shield-alt"></i> Verification System</h4>
+            <hr>
+            
+            <!-- User Information -->
+            <div class="user-info mb-4">
+                <h5>User Information</h5>
+                <div class="mb-3">
+                    <label for="userName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="userName" 
+                           placeholder="Enter your name" required>
+                    <div class="invalid-feedback">Please enter your full name</div>
+                </div>
+            </div>
+            
+            <!-- Settings -->
+            <div class="verification-settings mb-4">
+                <h5>Settings</h5>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="autoVerify" checked>
+                    <label class="form-check-label" for="autoVerify">
+                        Auto-verify on upload
+                    </label>
+                </div>
+            </div>
+            
+            <!-- Time Summary -->
+            <div class="total-time-summary">
+                <h5>Time Summary</h5>
+                <div id="timeSummary" class="time-summary">
+                    <div class="text-center">
+                        <i class="fas fa-clock fa-2x mb-2"></i>
+                        <div>No verified proofs yet</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Field Breakdown -->
+            <div class="field-breakdown mt-4">
+                <h5>Field Breakdown</h5>
+                <div id="fieldBreakdown" class="field-stats">
+                    <div class="text-center text-muted">
+                        <i class="fas fa-chart-pie fa-2x mb-2"></i>
+                        <div>No field data available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2><i class="fas fa-certificate"></i> Certificate Verification</h2>
+                <button class="btn btn-outline-primary" onclick="generateCertificate()">
+                    <i class="fas fa-file-download"></i> Generate Certificate
+                </button>
+            </div>
+            
+            <!-- Categories Container -->
+            <div id="categoriesContainer">
+                <form id="activityForm" class="activity-form">
+                    <div class="form-group mb-4">
+                        <label for="categorySelect">Category:</label>
+                        <select class="form-control form-select" id="categorySelect" required>
+                            <option value="">Select a category</option>
+                            <option value="courses">📚 Course</option>
+                            <option value="workshops">🔧 Workshop</option>
+                            <option value="student_activities_aisec">🎓 Student Activity (AISEC,Enactus,IEEE)</option>
+                            <option value="other_student_activities">🎯 Other Student Activity (tree, MSP)</option>
+                            <option value="volunteering_cop">🤝 Volunteering works (Ex: COP)</option>
+                            <option value="volunteering_icareer">💼 Volunteering works (Ex:Icareer)</option>
+                            <option value="youtube">📹 YouTube</option>
+                            <option value="internship_cib">🏢 Internship (EX:CIB)</option>
+                            <option value="real_internship">💼 Real Internship (Dsquares)</option>
+                            <option value="time_spent">⏰ Time Spent (EX Qauran,..etc)</option>
+                            <option value="sports">⚽ Sports</option>
+                            <option value="social">🤝 Social</option>
+                            <option value="arts">🎨 Arts</option>
+                            <option value="others">🔄 Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="fieldSelect">Field:</label>
+                        <select class="form-control form-select" id="fieldSelect" name="field">
+                            <option value="">Select a field</option>
+                            <option value="data_sciences_ai">Data Sciences & AI</option>
+                            <option value="pr">PR</option>
+                            <option value="web_development">Web Development</option>
+                            <option value="sales">Sales</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="project_management">Project Management</option>
+                            <option value="translation">Translation</option>
+                            <option value="hr">HR</option>
+                            <option value="motion_graphics">Motion Graphics</option>
+                            <option value="finance">Finance</option>
+                            <option value="data_entry">Data Entry</option>
+                            <option value="ui_ux">UI/UX</option>
+                            <option value="mobile_development">Mobile Development</option>
+                            <option value="graphic_design">Graphic Design</option>
+                            <option value="video_editing">Video Editing</option>
+                            <option value="supply_chain">Supply Chain</option>
+                            <option value="content_creation">Content Creation</option>
+                            <option value="product_design">Product Design</option>
+                            <option value="photography">Photography</option>
+                            <option value="operations">Operations</option>
+                            <option value="accounting">Accounting</option>
+                            <option value="website_testing">Website Testing</option>
+                            <option value="education_edtech">Education & EdTech</option>
+                            <option value="greentech_sustainability">GreenTech & Sustainability</option>
+                            <option value="hr_recruitment_tech">Human Resources & Recruitment Tech</option>
+                            <option value="technology_software">Technology & Software</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="activityTitle">Activity Title:</label>
+                        <input type="text" class="form-control" id="activityTitle" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="timeSpent">Time Spent:</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="timeSpent" min="0" step="0.5" required>
+                            <span class="input-group-text" id="timeUnit">hours</span>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4" id="proofSection">
+                        <label for="proofFile">Upload Proof:</label>
+                        <input type="file" class="form-control" id="proofFile" accept="image/*,.pdf" required>
+                        <div class="form-text text-muted">Upload a certificate or activity photo</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Activity</button>
+                </form>
+
+                <div class="mt-5">
+                    <h3 class="mb-4">Added Activities</h3>
+                    <div id="activitiesContainer"></div>
+                    <div class="text-center mt-4" id="submitAllContainer" style="display: none;">
+                        <button class="btn btn-success btn-lg" onclick="submitAllActivities()">
+                            <i class="fas fa-check-circle"></i> Submit All Activities
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Verification Dashboard -->
+            <div id="verificationDashboard" class="mt-4">
+                <h3><i class="fas fa-chart-bar"></i> Verification Dashboard</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="dashboard-card">
+                            <h5>Statistics</h5>
+                            <div id="overallStats">
+                                <div class="text-muted">Upload proofs to see statistics</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dashboard-card">
+                            <h5>Recent Activity</h5>
+                            <div id="recentActivity">
+                                <div class="text-muted">No recent activity</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Configuration - Auto-detect API URL
+        const detectApiUrl = () => {
+            const commonPorts = [8001, 8002, 8003, 8000, 3000];
+            return `http://localhost:${commonPorts[0]}`;
+        };
+        
+        let API_BASE_URL = detectApiUrl();
+        
+        async function testApiConnection() {
+            const commonPorts = [8001, 8002, 8003, 8000, 3000];
+            
+            for (const port of commonPorts) {
+                try {
+                    const testUrl = `http://localhost:${port}`;
+                    const response = await fetch(`${testUrl}/health`, { 
+                        method: 'GET',
+                        signal: AbortSignal.timeout(2000)
+                    });
+                    
+                    if (response.ok) {
+                        API_BASE_URL = testUrl;
+                        console.log(`Connected to API at ${API_BASE_URL}`);
+                        updateConnectionStatus(true, port);
+                        return true;
+                    }
+                } catch (error) {
+                    continue;
+                }
+            }
+            
+            console.error('Could not connect to API server on any common port');
+            updateConnectionStatus(false);
+            return false;
+        }
+        
+        function updateConnectionStatus(connected, port = null) {
+            const statusDiv = document.getElementById('connectionStatus') || createConnectionStatusDiv();
+            
+            if (connected) {
+                statusDiv.innerHTML = `
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <i class="fas fa-check-circle"></i> Connected to API server on port ${port}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                `;
+                setTimeout(() => {
+                    const alert = statusDiv.querySelector('.alert');
+                    if (alert) alert.remove();
+                }, 3000);
+            } else {
+                statusDiv.innerHTML = `
+                    <div class="alert alert-warning" role="alert">
+                        <i class="fas fa-exclamation-triangle"></i> 
+                        Cannot connect to API server. Please make sure the server is running on one of these ports: 8001, 8002, 8003, 8000, 3000
+                        <button class="btn btn-sm btn-outline-secondary ms-2" onclick="testApiConnection()">
+                            <i class="fas fa-sync"></i> Retry
+                        </button>
+                    </div>
+                `;
+            }
+        }
+        
+        function createConnectionStatusDiv() {
+            const div = document.createElement('div');
+            div.id = 'connectionStatus';
+            div.className = 'mb-3';
+            document.querySelector('.content').prepend(div);
+            return div;
+        }
+        
+        // Category multipliers for calculation
+        const CATEGORY_MULTIPLIERS = {
+            courses: 3,
+            workshops: 4,
+            student_activities_aisec: 7,
+            other_student_activities: 4,
+            volunteering_cop: 15,
+            volunteering_icareer: 10,
+            youtube: 2,
+            internship_cib: 8,
+            real_internship: 50,
+            time_spent: 1,
+            sports: 2,
+            social: 2,
+            arts: 2,
+            others: 1.5
+        };
+
+        // Category configurations
+        const CATEGORIES = {
+            courses: { name: "📚 Course", timeUnit: "hours" },
+            workshops: { name: "🔧 Workshop", timeUnit: "hours" },
+            student_activities_aisec: { name: "🎓 Student Activity (AISEC,Enactus,IEEE)", timeUnit: "months" },
+            other_student_activities: { name: "🎯 Other Student Activity (tree, MSP)", timeUnit: "months" },
+            volunteering_cop: { name: "🤝 Volunteering works (Ex: COP)", timeUnit: "months" },
+            volunteering_icareer: { name: "💼 Volunteering works (Ex:Icareer)", timeUnit: "months" },
+            youtube: { name: "📹 YouTube", timeUnit: "hours" },
+            internship_cib: { name: "🏢 Internship (EX:CIB)", timeUnit: "months" },
+            real_internship: { name: "💼 Real Internship (Dsquares)", timeUnit: "months" },
+            time_spent: { name: "⏰ Time Spent (EX Qauran,..etc)", timeUnit: "months" },
+            sports: { name: "⚽ Sports", timeUnit: "months" },
+            social: { name: "🤝 Social", timeUnit: "months" },
+            arts: { name: "🎨 Arts", timeUnit: "months" },
+            others: { name: "🔄 Others", timeUnit: "months" }
+        };
+
+        // State management
+        const state = {
+            verifications: new Map(),
+            totalTime: 0,
+            stats: { total: 0, verified: 0, partiallyVerified: 0, unverified: 0 },
+            fieldBreakdown: {}
+        };
+
+        // Initialize application
+        document.addEventListener('DOMContentLoaded', async function() {
+            await testApiConnection();
+            initializeApp();
+        });        function initializeApp() {
+            loadUserInfo();
+            setupEventListeners();
+            updateDashboard();
+            // Initially hide proof upload section
+            toggleProofUpload('');
+        }function loadUserInfo() {
+            const savedInfo = localStorage.getItem('userInfo');
+            if (savedInfo) {
+                const userInfo = JSON.parse(savedInfo);
+                const userName = userInfo.name || '';
+                document.getElementById('userName').value = userName;
+                
+                // If we have a saved user name, load their data from database
+                if (userName.trim()) {
+                    loadUserDataFromDatabase(userName.trim());
+                }
+            }
+        }        async function loadUserDataFromDatabase(userName) {
+            if (!userName || userName.length < 2) return;
+            
+            try {
+                console.log(`Loading user data for: ${userName}`);
+                
+                // Fetch user field stats from API
+                const fieldResponse = await fetch(`${API_BASE_URL}/user/${encodeURIComponent(userName)}/field_stats`);
+                
+                // Fetch user category stats from API
+                const categoryResponse = await fetch(`${API_BASE_URL}/user/${encodeURIComponent(userName)}/category_stats`);
+                
+                if (fieldResponse.ok) {
+                    const userData = await fieldResponse.json();
+                    console.log('User field data loaded:', userData);
+                    
+                    // Store initial database values separately
+                    state.initialTotalTime = userData.total_hours || 0;
+                    state.initialFieldBreakdown = {};
+                    state.initialCategoryBreakdown = {};
+                    
+                    // Convert field data to the format expected by our functions
+                    if (userData.fields && userData.fields.length > 0) {
+                        userData.fields.forEach(field => {
+                            state.initialFieldBreakdown[field.field_name] = {
+                                hours: field.field_hours,
+                                count: field.field_submissions
+                            };
+                        });
+                    }
+                    
+                    // Load category data if available
+                    if (categoryResponse.ok) {
+                        const categoryData = await categoryResponse.json();
+                        console.log('User category data loaded:', categoryData);
+                        
+                        if (categoryData.category_stats) {
+                            Object.keys(categoryData.category_stats).forEach(category => {
+                                const stats = categoryData.category_stats[category];
+                                state.initialCategoryBreakdown[category] = {
+                                    name: CATEGORIES[category]?.name || category,
+                                    icon: CATEGORIES[category]?.icon || '📋',
+                                    equivalent: stats.hours,
+                                    count: stats.count
+                                };
+                            });
+                        }
+                    }
+                    
+                    // Set current totals to initial values (will be updated when session activities are added)
+                    state.totalTime = state.initialTotalTime;
+                    state.fieldBreakdown = { ...state.initialFieldBreakdown };
+                    
+                    // Update the display with existing user data
+                    updateTimeSummaryFromUserData(userData);
+                    updateFieldBreakdown(state.fieldBreakdown);
+                    
+                    console.log(`Loaded ${userData.total_hours || 0} total hours for user ${userName}`);
+                } else if (fieldResponse.status === 404) {
+                    // User not found in database - this is normal for new users
+                    console.log(`User ${userName} not found in database (new user)`);
+                    state.initialTotalTime = 0;
+                    state.initialFieldBreakdown = {};
+                    state.initialCategoryBreakdown = {};
+                    resetUserDisplay();
+                } else {
+                    console.error('Error loading user data:', response.status);
+                    state.initialTotalTime = 0;
+                    state.initialFieldBreakdown = {};
+                    resetUserDisplay();
+                }
+            } catch (error) {
+                console.error('Error fetching user data:', error);
+                state.initialTotalTime = 0;
+                state.initialFieldBreakdown = {};
+                resetUserDisplay();
+            }
+        }
+
+        function updateTimeSummaryFromUserData(userData) {
+            const summaryDiv = document.getElementById('timeSummary');
+            const totalHours = userData.total_hours || 0;
+            
+            if (totalHours === 0) {
+                summaryDiv.innerHTML = `
+                    <div class="text-center">
+                        <i class="fas fa-clock fa-2x mb-2"></i>
+                        <div>No verified proofs yet</div>
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = `
+                <div class="text-center mb-3">
+                    <i class="fas fa-clock fa-2x mb-2"></i>
+                    <h4>${totalHours.toFixed(1)} Hours</h4>
+                    <small>Total Equivalent Time</small>
+                </div>
+            `;
+            
+            // Add field breakdown if available
+            if (userData.fields && userData.fields.length > 0) {
+                html += '<hr><div class="small"><h6>By Field:</h6>';
+                userData.fields.forEach(field => {
+                    // Get field display name
+                    const fieldSelect = document.getElementById('fieldSelect');
+                    const fieldOption = fieldSelect ? fieldSelect.querySelector(`option[value="${field.field_name}"]`) : null;
+                    const fieldDisplayName = fieldOption ? fieldOption.textContent : field.field_name;
+                    
+                    html += `
+                        <div class="d-flex justify-content-between mb-1">
+                            <span style="font-size: 0.85em;">${fieldDisplayName}:</span>
+                            <span>${field.field_hours.toFixed(1)}h (${field.field_submissions})</span>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+            }
+            
+            summaryDiv.innerHTML = html;
+        }        function resetUserDisplay() {
+            // Reset state
+            state.totalTime = 0;
+            state.sessionTime = 0;
+            state.initialTotalTime = 0;
+            state.fieldBreakdown = {};
+            state.initialFieldBreakdown = {};
+            state.categoryBreakdown = {};
+            state.initialCategoryBreakdown = {};
+            
+            // Reset displays
+            const summaryDiv = document.getElementById('timeSummary');
+            summaryDiv.innerHTML = `
+                <div class="text-center">
+                    <i class="fas fa-clock fa-2x mb-2"></i>
+                    <div>No verified proofs yet</div>
+                </div>
+            `;
+            
+            const fieldBreakdownDiv = document.getElementById('fieldBreakdown');
+            fieldBreakdownDiv.innerHTML = `
+                <div class="text-center text-muted">
+                    <i class="fas fa-chart-pie fa-2x mb-2"></i>
+                    <div>No field data available</div>
+                </div>
+            `;
+        }function saveUserInfo() {
+            const userName = document.getElementById('userName').value.trim();
+            const userInfo = { name: userName };
+            localStorage.setItem('userInfo', JSON.stringify(userInfo));
+            
+            // Load user data from database when name is entered/changed
+            if (userName && userName.length >= 2) {
+                loadUserDataFromDatabase(userName);
+            } else {
+                resetUserDisplay();
+            }
+        }        function setupEventListeners() {
+            // Set up user name input with debounced database lookup
+            let userNameTimeout;
+            document.getElementById('userName').addEventListener('input', function() {
+                saveUserInfo();
+                
+                // Debounce the database lookup to avoid too many API calls
+                clearTimeout(userNameTimeout);
+                const userName = this.value.trim();
+                if (userName && userName.length >= 2) {
+                    userNameTimeout = setTimeout(() => {
+                        loadUserDataFromDatabase(userName);
+                    }, 500); // Wait 500ms after user stops typing
+                } else {
+                    resetUserDisplay();
+                }
+            });
+            
+            document.getElementById('userName').addEventListener('blur', function() {
+                validateUserName();
+                const userName = this.value.trim();
+                if (userName && userName.length >= 2) {
+                    loadUserDataFromDatabase(userName);
+                }
+            });
+            
+            document.getElementById('categorySelect').addEventListener('change', function(e) {
+                updateTimeUnit(e.target.value);
+                toggleProofUpload(e.target.value);
+            });
+              document.getElementById('activityForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const form = e.target;
+                const categoryKey = form.querySelector('#categorySelect').value;
+                const title = form.querySelector('#activityTitle').value;
+                const timeSpent = form.querySelector('#timeSpent').value;
+                const field = form.querySelector('#fieldSelect').value;
+                const file = form.querySelector('#proofFile').files[0];
+                
+                // Check if category requires proof or not
+                const needsProof = requiresProofUpload(categoryKey);
+                
+                if (categoryKey && title && timeSpent && (needsProof ? file : true)) {
+                    const activityElement = addActivityToList(categoryKey, title, timeSpent, field);
+                    
+                    try {
+                        let result;
+                        if (needsProof) {
+                            // Verify proof for categories that require it
+                            result = await verifyProof(file, categoryKey, title, timeSpent, activityElement);
+                            console.log('Verification completed:', result);
+                        } else {
+                            // Skip verification for categories that don't require proof
+                            result = {
+                                verification_status: 'verified',
+                                valid_for_time: true,
+                                confidence_score: 1.0,
+                                category: categoryKey,
+                                activity_title: title,
+                                user_name: document.getElementById('userName').value,
+                                timestamp: new Date().toISOString(),
+                                details: {
+                                    proof_type: 'no_proof_required',
+                                    verification_skipped: true,
+                                    reason: 'Category does not require proof verification'
+                                }
+                            };
+                            console.log('Verification skipped for category:', categoryKey);
+                        }
+                        
+                        displayVerificationResult(result, activityElement);
+                        calculateTotalTime();
+                        updateDashboard();
+                        
+                        form.reset();
+                        updateTimeUnit('');
+                        toggleProofUpload(''); // Hide proof section when form is reset
+                        
+                    } catch (error) {
+                        console.error('Form submission error:', error);
+                        displayVerificationResult(null, activityElement);
+                    }
+                }
+            });
+        }
+
+        function validateUserName() {
+            const nameInput = document.getElementById('userName');
+            const name = nameInput.value.trim();
+            
+            if (name.length < 2) {
+                nameInput.classList.add('is-invalid');
+                return false;
+            } else {
+                nameInput.classList.remove('is-invalid');
+                return true;
+            }
+        }
+
+        // Categories that don't require proof verification
+        const NO_VERIFICATION_CATEGORIES = ['arts', 'others', 'social', 'youtube', 'sports', 'time_spent'];
+        
+        function requiresProofUpload(categoryKey) {
+            return !NO_VERIFICATION_CATEGORIES.includes(categoryKey);
+        }
+
+        function toggleProofUpload(categoryKey) {
+            const proofSection = document.getElementById('proofSection');
+            const proofFile = document.getElementById('proofFile');
+            
+            if (requiresProofUpload(categoryKey)) {
+                proofSection.style.display = 'block';
+                proofFile.required = true;
+            } else {
+                proofSection.style.display = 'none';
+                proofFile.required = false;
+                proofFile.value = ''; // Clear the file input
+            }
+        }
+
+        function addActivityToList(categoryKey, title, timeSpent, field) {
+            const container = document.getElementById('activitiesContainer');
+            const categoryInfo = CATEGORIES[categoryKey];
+            
+            // Get field display name
+            const fieldSelect = document.getElementById('fieldSelect');
+            const fieldOption = fieldSelect ? fieldSelect.querySelector(`option[value="${field}"]`) : null;
+            const fieldDisplayName = fieldOption ? fieldOption.textContent : field;
+            
+            const activityElement = document.createElement('div');
+            activityElement.className = 'activity-item';
+            activityElement.dataset.category = categoryKey;
+            activityElement.dataset.timeSpent = timeSpent;
+            activityElement.dataset.field = field;
+            
+            activityElement.innerHTML = `
+                <div class="activity-info">
+                    <div class="activity-title">${title}</div>
+                    <div class="activity-meta">
+                        ${categoryInfo.name} - ${timeSpent} ${categoryInfo.timeUnit}
+                        ${fieldDisplayName ? `<span class="badge bg-info ms-2">${fieldDisplayName}</span>` : ''}
+                    </div>
+                </div>
+                <div class="activity-status">
+                    <i class="fas fa-spinner fa-spin"></i> Verification in progress...
+                </div>
+                <button class="delete-activity" onclick="removeActivity(this)" title="Remove activity">
+                    <i class="fas fa-trash"></i>
+                </button>
+            `;
+            
+            container.appendChild(activityElement);
+            document.getElementById('submitAllContainer').style.display = 'block';
+            
+            return activityElement;
+        }
+
+        function removeActivity(button) {
+            const activityItem = button.closest('.activity-item');
+            if (activityItem) {
+                activityItem.remove();
+                calculateTotalTime();
+                updateDashboard();
+
+                const activities = document.querySelectorAll('.activity-item');
+                if (activities.length === 0) {
+                    document.getElementById('submitAllContainer').style.display = 'none';
+                }
+            }
+        }
+
+        async function verifyProof(file, categoryKey, title, timeSpent, activityElement) {
+            try {
+                if (!validateUserName()) {
+                    showError(activityElement, 'Please enter your name first');
+                    return null;
+                }
+                
+                const formData = new FormData();
+                formData.append('file', file);
+                formData.append('user_name', document.getElementById('userName').value.trim());
+                formData.append('activity_title', title);
+                formData.append('category', categoryKey);
+                formData.append('field', activityElement.dataset.field || '');
+                formData.append('time_spent', timeSpent.toString());
+                formData.append('time_unit', CATEGORIES[categoryKey].timeUnit);
+                
+                const response = await fetch(`${API_BASE_URL}/verify/`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`Server error: ${response.status} ${response.statusText}`);
+                }
+                
+                const result = await response.json();
+                
+                if (!result.status && !result.verification_status) {
+                    result.status = 'verified';
+                }
+                
+                result.timeSpent = timeSpent;
+                result.timeUnit = CATEGORIES[categoryKey].timeUnit;
+                result.categoryKey = categoryKey;
+                result.field = activityElement.dataset.field;
+                
+                return result;
+                
+            } catch (error) {
+                console.error('Verification error:', error);
+                throw error;
+            }
+        }
+
+        function showError(element, message) {
+            const statusDiv = element.querySelector('.activity-status');
+            statusDiv.innerHTML = `<div class="error-message"><i class="fas fa-exclamation-triangle"></i> ${message}</div>`;
+        }
+
+        function displayVerificationResult(result, activityElement) {
+            const statusDiv = activityElement.querySelector('.activity-status');
+            let statusText = '';
+            let statusClass = '';
+            let icon = '';
+            
+            if (!result) {
+                statusText = 'Error';
+                statusClass = 'text-danger';
+                icon = 'times-circle';
+            } else {
+                const verificationStatus = result.status || result.verification_status;
+                
+                switch(verificationStatus) {
+                    case 'verified':
+                        statusText = 'Verified';
+                        statusClass = 'text-success';
+                        icon = 'check-circle';
+                        break;
+                    case 'partially_verified':
+                        statusText = 'Partially Verified';
+                        statusClass = 'text-warning';
+                        icon = 'exclamation-circle';
+                        break;
+                    default:
+                        statusText = 'Not Verified';
+                        statusClass = 'text-danger';
+                        icon = 'times-circle';
+                }
+            }
+            
+            statusDiv.className = `activity-status ${statusClass}`;
+            statusDiv.innerHTML = `<i class="fas fa-${icon}"></i> ${statusText}`;
+            
+            if (result) {
+                activityElement.__verificationData = result;
+            }
+        }        function calculateTotalTime() {
+            let sessionEquivalentTime = 0; // Time from current session only
+            let sessionCategoryBreakdown = {};
+            let sessionFieldBreakdown = {};
+            
+            state.stats = { total: 0, verified: 0, partiallyVerified: 0, unverified: 0 };
+            
+            // Calculate time for current session activities
+            document.querySelectorAll('.activity-item').forEach(activity => {
+                const categoryKey = activity.dataset.category;
+                const field = activity.dataset.field;
+                const timeSpent = parseFloat(activity.dataset.timeSpent) || 0;
+                const verificationData = activity.__verificationData;
+                
+                if (verificationData) {
+                    state.stats.total++;
+                    
+                    const verificationStatus = verificationData.status || verificationData.verification_status;
+                    
+                    if (verificationStatus === 'verified') {
+                        state.stats.verified++;
+                        if (timeSpent > 0) {
+                            const multiplier = CATEGORY_MULTIPLIERS[categoryKey] || 1;
+                            const equivalentTime = timeSpent * multiplier;
+                            
+                            // Session category breakdown
+                            if (!sessionCategoryBreakdown[categoryKey]) {
+                                sessionCategoryBreakdown[categoryKey] = {
+                                    name: CATEGORIES[categoryKey].name,
+                                    equivalent: 0,
+                                    count: 0
+                                };
+                            }
+                            
+                            sessionCategoryBreakdown[categoryKey].equivalent += equivalentTime;
+                            sessionCategoryBreakdown[categoryKey].count++;
+                            
+                            // Session field breakdown
+                            if (field) {
+                                if (!sessionFieldBreakdown[field]) {
+                                    sessionFieldBreakdown[field] = { hours: 0, count: 0 };
+                                }
+                                
+                                sessionFieldBreakdown[field].hours += equivalentTime;
+                                sessionFieldBreakdown[field].count++;
+                            }
+                            
+                            sessionEquivalentTime += equivalentTime;
+                        }
+                    } else if (verificationStatus === 'partially_verified') {
+                        state.stats.partiallyVerified++;
+                    } else {
+                        state.stats.unverified++;
+                    }
+                }
+            });
+              // Combine session data with existing database data
+            const totalEquivalentTime = sessionEquivalentTime + (state.initialTotalTime || 0);
+            
+            // Combine category breakdowns (session + database)
+            const combinedCategoryBreakdown = { ...state.initialCategoryBreakdown };
+            Object.keys(sessionCategoryBreakdown).forEach(category => {
+                if (combinedCategoryBreakdown[category]) {
+                    combinedCategoryBreakdown[category] = {
+                        name: combinedCategoryBreakdown[category].name,
+                        icon: combinedCategoryBreakdown[category].icon,
+                        equivalent: combinedCategoryBreakdown[category].equivalent + sessionCategoryBreakdown[category].equivalent,
+                        count: combinedCategoryBreakdown[category].count + sessionCategoryBreakdown[category].count
+                    };
+                } else {
+                    combinedCategoryBreakdown[category] = sessionCategoryBreakdown[category];
+                }
+            });
+            
+            // Combine field breakdowns (session + database)
+            const combinedFieldBreakdown = { ...state.initialFieldBreakdown };
+            Object.keys(sessionFieldBreakdown).forEach(field => {
+                if (combinedFieldBreakdown[field]) {
+                    combinedFieldBreakdown[field] = {
+                        hours: combinedFieldBreakdown[field].hours + sessionFieldBreakdown[field].hours,
+                        count: combinedFieldBreakdown[field].count + sessionFieldBreakdown[field].count
+                    };
+                } else {
+                    combinedFieldBreakdown[field] = sessionFieldBreakdown[field];
+                }
+            });
+            
+            state.totalTime = totalEquivalentTime;
+            state.sessionTime = sessionEquivalentTime;
+            state.fieldBreakdown = combinedFieldBreakdown;
+            state.categoryBreakdown = combinedCategoryBreakdown;
+            
+            updateTimeSummary(combinedCategoryBreakdown, combinedFieldBreakdown);
+            updateFieldBreakdown(combinedFieldBreakdown);
+            
+            return totalEquivalentTime;
+        }
+
+        function updateTimeSummary(categoryBreakdown, fieldBreakdown) {
+            const summaryDiv = document.getElementById('timeSummary');
+            
+            if (state.totalTime === 0) {
+                summaryDiv.innerHTML = `
+                    <div class="text-center">
+                        <i class="fas fa-clock fa-2x mb-2"></i>
+                        <div>No verified proofs yet</div>
+                    </div>
+                `;
+                return;
+            }
+              let html = `
+                <div class="text-center mb-3">
+                    <i class="fas fa-clock fa-2x mb-2"></i>
+                    <h4>${state.totalTime.toFixed(1)} Hours</h4>
+                    <small>Total Equivalent Time</small>
+                </div>
+            `;
+            
+            // Show breakdown if there's both existing and session time
+            if (state.initialTotalTime > 0 && state.sessionTime > 0) {
+                html += `
+                    <hr><div class="small">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Previous Activities:</span>
+                            <span>${state.initialTotalTime.toFixed(1)}h</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Current Session:</span>
+                            <span>${state.sessionTime.toFixed(1)}h</span>
+                        </div>
+                    </div>
+                `;
+            } else if (state.sessionTime > 0) {
+                html += `
+                    <hr><div class="small">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Current Session:</span>
+                            <span>${state.sessionTime.toFixed(1)}h</span>
+                        </div>
+                    </div>
+                `;
+            }
+              // Add category breakdown (combined existing + session)
+            if (categoryBreakdown && Object.keys(categoryBreakdown).length > 0) {
+                html += '<hr><div class="small"><h6>All Categories:</h6>';
+                Object.entries(categoryBreakdown).forEach(([categoryKey, stats]) => {
+                    html += `
+                        <div class="d-flex justify-content-between mb-1">
+                            <span style="font-size: 0.85em;">${stats.icon || '📋'} ${stats.name}:</span>
+                            <span>${stats.equivalent.toFixed(1)}h (${stats.count})</span>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+            }
+            
+            // Add field breakdown (combined existing + session)
+            if (fieldBreakdown && Object.keys(fieldBreakdown).length > 0) {
+                html += '<hr><div class="small"><h6>All Fields:</h6>';
+                Object.entries(fieldBreakdown).forEach(([field, stats]) => {
+                    const fieldSelect = document.getElementById('fieldSelect');
+                    const fieldOption = fieldSelect ? fieldSelect.querySelector(`option[value="${field}"]`) : null;
+                    const fieldDisplayName = fieldOption ? fieldOption.textContent : field;
+                    
+                    html += `
+                        <div class="d-flex justify-content-between mb-1">
+                            <span style="font-size: 0.85em;">${fieldDisplayName}:</span>
+                            <span>${stats.hours.toFixed(1)}h (${stats.count})</span>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+            }
+            
+            summaryDiv.innerHTML = html;
+        }
+
+        function updateFieldBreakdown(fieldBreakdown) {
+            const fieldBreakdownDiv = document.getElementById('fieldBreakdown');
+            const fieldStats = fieldBreakdown || state.fieldBreakdown;
+            
+            if (!fieldStats || Object.keys(fieldStats).length === 0) {
+                fieldBreakdownDiv.innerHTML = `
+                    <div class="text-center text-muted">
+                        <i class="fas fa-chart-pie fa-2x mb-2"></i>
+                        <div>No field data available</div>
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = '';
+            let totalFieldTime = Object.values(fieldStats).reduce((sum, stats) => sum + stats.hours, 0);
+            
+            const sortedFields = Object.entries(fieldStats).sort((a, b) => b[1].hours - a[1].hours);
+            
+            sortedFields.forEach(([field, stats]) => {
+                const fieldSelect = document.getElementById('fieldSelect');
+                const fieldOption = fieldSelect ? fieldSelect.querySelector(`option[value="${field}"]`) : null;
+                const fieldDisplayName = fieldOption ? fieldOption.textContent : field;
+                
+                const percentage = totalFieldTime > 0 ? (stats.hours / totalFieldTime * 100) : 0;
+                
+                html += `
+                    <div class="field-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="field-name">${fieldDisplayName}</div>
+                            <div class="field-hours">${stats.hours.toFixed(1)}h</div>
+                        </div>
+                        <div class="field-progress">
+                            <div class="field-progress-bar" style="width: ${percentage}%"></div>
+                        </div>
+                        <div class="verification-stats">
+                            <span>${stats.count} activities</span>
+                            <span>${percentage.toFixed(1)}%</span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            fieldBreakdownDiv.innerHTML = html;
+        }
+
+        function updateDashboard() {
+            const stats = state.stats;
+            const statsDiv = document.getElementById('overallStats');
+            const activityDiv = document.getElementById('recentActivity');
+            
+            statsDiv.innerHTML = `
+                <div class="row text-center">
+                    <div class="col">
+                        <h5>${stats.total}</h5>
+                        <small>Total Entries</small>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-success">${stats.verified}</h5>
+                        <small>Verified</small>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-warning">${stats.partiallyVerified}</h5>
+                        <small>Partially</small>
+                    </div>
+                    <div class="col">
+                        <h5 class="text-danger">${stats.unverified}</h5>
+                        <small>Unverified</small>
+                    </div>
+                </div>
+            `;
+            
+            activityDiv.innerHTML = `
+                <div class="text-muted">
+                    ${stats.total > 0 ? `Last update: ${new Date().toLocaleString()}` : 'No activity yet'}
+                </div>
+            `;
+        }
+
+        function generateCertificate() {
+            const userName = document.getElementById('userName').value.trim();
+            if (!userName) {
+                alert('Please enter your name before generating a certificate.');
+                return;
+            }
+            
+            let reportData = {
+                user_name: userName,
+                total_equivalent_time: state.totalTime,
+                categories: {},
+                fields: state.fieldBreakdown
+            };
+            
+            document.querySelectorAll('.activity-item').forEach(activity => {
+                const categoryKey = activity.dataset.category;
+                const timeSpent = parseFloat(activity.dataset.timeSpent) || 0;
+                const title = activity.querySelector('.activity-title').textContent;
+                const verificationData = activity.__verificationData;
+                
+                if (verificationData && (verificationData.status === 'verified' || verificationData.verification_status === 'verified')) {
+                    if (!reportData.categories[categoryKey]) {
+                        reportData.categories[categoryKey] = {
+                            original_time: 0,
+                            equivalent_time: 0,
+                            entries: []
+                        };
+                    }
+                    
+                    const multiplier = CATEGORY_MULTIPLIERS[categoryKey];
+                    const equivalentTime = timeSpent * multiplier;
+                    
+                    reportData.categories[categoryKey].original_time += timeSpent;
+                    reportData.categories[categoryKey].equivalent_time += equivalentTime;
+                    reportData.categories[categoryKey].entries.push({
+                        title: title,
+                        time: timeSpent,
+                        unit: CATEGORIES[categoryKey].timeUnit,
+                        equivalent_time: equivalentTime
+                    });
+                }
+            });
+            
+            const blob = new Blob([JSON.stringify(reportData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `certificate_report_${userName.replace(/\s+/g, '_')}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function updateTimeUnit(categoryKey) {
+            const timeUnit = document.getElementById('timeUnit');
+            const timeInput = document.getElementById('timeSpent');
+            
+            if (categoryKey && CATEGORIES[categoryKey]) {
+                timeUnit.textContent = CATEGORIES[categoryKey].timeUnit;
+                timeInput.step = CATEGORIES[categoryKey].timeUnit === 'months' ? '1' : '0.5';
+            }
+        }
+
+        async function submitAllActivities() {
+            const activities = document.querySelectorAll('.activity-item');
+            if (activities.length === 0) {
+                alert('Please add some activities first.');
+                return;
+            }
+
+            const submitBtn = document.querySelector('#submitAllContainer button');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+
+            try {
+                const activitiesData = [];
+                activities.forEach(activity => {
+                    if (!activity.classList.contains('submitted')) {
+                        const categoryKey = activity.dataset.category;
+                        const timeSpent = parseFloat(activity.dataset.timeSpent);
+                        const title = activity.querySelector('.activity-title').textContent;
+                        const verificationData = activity.__verificationData;
+
+                        if (verificationData && (verificationData.status === 'verified' || verificationData.verification_status === 'verified')) {
+                            activitiesData.push({
+                                verification_id: verificationData.id,
+                                category: categoryKey,
+                                activity_title: title,
+                                time_spent: timeSpent,
+                                time_unit: CATEGORIES[categoryKey].timeUnit
+                            });
+                        }
+                    }
+                });
+
+                if (activitiesData.length === 0) {
+                    alert('No verified activities to submit.');
+                    return;
+                }
+
+                const response = await fetch(`${API_BASE_URL}/submit_all/`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(activitiesData)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to submit activities');
+                }
+
+                const result = await response.json();
+                
+                activities.forEach(activity => {
+                    const verificationData = activity.__verificationData;
+                    if (verificationData && (verificationData.status === 'verified' || verificationData.verification_status === 'verified')) {
+                        activity.classList.add('submitted');
+                        const statusDiv = activity.querySelector('.activity-status');
+                        statusDiv.innerHTML = '<i class="fas fa-check-double text-success"></i> Submitted';
+                    }
+                });
+
+                showSubmissionSuccess(result.total_equivalent_time);
+                document.getElementById('submitAllContainer').style.display = 'none';
+
+            } catch (error) {
+                console.error('Submission error:', error);
+                alert('Failed to submit activities. Please try again.');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-check-circle"></i> Submit All Activities';
+            }
+        }
+
+        function showSubmissionSuccess(totalTime) {
+            const successAlert = document.createElement('div');
+            successAlert.className = 'alert alert-success text-center mt-4';
+            successAlert.innerHTML = `
+                <h4><i class="fas fa-check-circle"></i> Success!</h4>
+                <p>All activities have been submitted successfully.</p>
+                <p class="mb-0"><strong>Total Equivalent Time: ${totalTime.toFixed(1)} hours</strong></p>
+            `;
+            document.getElementById('activitiesContainer').after(successAlert);
+
+            setTimeout(() => {
+                successAlert.remove();
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
+
